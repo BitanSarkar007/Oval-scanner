@@ -1,0 +1,380 @@
+attackerLocated(internet).
+attackGoal(execCode(server_192_168_31_206,_)).
+
+hacl(internet, server_192_168_31_206, 'tcp', 9200).
+networkServiceInfo(server_192_168_31_206, 'Elasticsearch', 'tcp', 9200, 'Elasticsearch').
+
+hacl(internet, server_192_168_31_206, 'tcp', 3306).
+vulExists(server_192_168_31_206, 'CVE-2001-0645', 'MySQL').
+vulProperty('CVE-2001-0645', remoteExploit, privEscalation).
+vulExists(server_192_168_31_206, 'CVE-2004-2357', 'MySQL').
+vulProperty('CVE-2004-2357', remoteExploit, privEscalation).
+vulExists(server_192_168_31_206, 'CVE-2006-1451', 'MySQL').
+vulProperty('CVE-2006-1451', remoteExploit, privEscalation).
+vulExists(server_192_168_31_206, 'CVE-2007-2554', 'MySQL').
+vulProperty('CVE-2007-2554', remoteExploit, privEscalation).
+vulExists(server_192_168_31_206, 'CVE-2007-6081', 'MySQL').
+vulProperty('CVE-2007-6081', remoteExploit, privEscalation).
+vulExists(server_192_168_31_206, 'CVE-2009-0919', 'MySQL').
+vulProperty('CVE-2009-0919', remoteExploit, privEscalation).
+vulExists(server_192_168_31_206, 'CVE-2014-3419', 'MySQL').
+vulProperty('CVE-2014-3419', remoteExploit, privEscalation).
+vulExists(server_192_168_31_206, 'CVE-2015-4669', 'MySQL').
+vulProperty('CVE-2015-4669', remoteExploit, privEscalation).
+vulExists(server_192_168_31_206, 'CVE-2016-6531', 'MySQL').
+vulProperty('CVE-2016-6531', remoteExploit, privEscalation).
+vulExists(server_192_168_31_206, 'CVE-2018-15719', 'MySQL').
+vulProperty('CVE-2018-15719', remoteExploit, privEscalation).
+networkServiceInfo(server_192_168_31_206, 'MySQL', 'tcp', 3306, 'MySQL').
+
+hacl(internet, server_192_168_31_206, 'tcp', 9200).
+vulExists(server_192_168_31_206, 'CVE-2021-22144', 'Elastic').
+vulProperty('CVE-2021-22144', remoteExploit, privEscalation).
+networkServiceInfo(server_192_168_31_206, 'Elastic', 'tcp', 9200, 'Elastic').
+
+hacl(internet, server_192_168_31_206, 'tcp', 9200).
+vulExists(server_192_168_31_206, 'CVE-2021-22135', 'Elastic').
+vulProperty('CVE-2021-22135', remoteExploit, privEscalation).
+vulExists(server_192_168_31_206, 'CVE-2021-22137', 'Elastic').
+vulProperty('CVE-2021-22137', remoteExploit, privEscalation).
+networkServiceInfo(server_192_168_31_206, 'Elastic', 'tcp', 9200, 'Elastic').
+
+hacl(internet, server_192_168_31_206, 'tcp', 8000).
+vulExists(server_192_168_31_206, 'CVE-2011-1473', 'SSL_TLS_').
+vulProperty('CVE-2011-1473', remoteExploit, privEscalation).
+vulExists(server_192_168_31_206, 'CVE-2011-5094', 'SSL_TLS_').
+vulProperty('CVE-2011-5094', remoteExploit, privEscalation).
+networkServiceInfo(server_192_168_31_206, 'SSL_TLS_', 'tcp', 8000, 'SSL_TLS_').
+
+hacl(internet, server_192_168_31_206, 'tcp', 8000).
+networkServiceInfo(server_192_168_31_206, 'SSL_TLS_', 'tcp', 8000, 'SSL_TLS_').
+
+hacl(internet, server_192_168_31_206, 'tcp', 8000).
+networkServiceInfo(server_192_168_31_206, 'SSL_TLS_', 'tcp', 8000, 'SSL_TLS_').
+
+hacl(internet, server_192_168_31_206, 'tcp', 3306).
+vulExists(server_192_168_31_206, 'CVE-2011-1473', 'SSL_TLS_').
+vulProperty('CVE-2011-1473', remoteExploit, privEscalation).
+vulExists(server_192_168_31_206, 'CVE-2011-5094', 'SSL_TLS_').
+vulProperty('CVE-2011-5094', remoteExploit, privEscalation).
+networkServiceInfo(server_192_168_31_206, 'SSL_TLS_', 'tcp', 3306, 'SSL_TLS_').
+
+hacl(internet, server_192_168_31_206, 'tcp', 9200).
+vulExists(server_192_168_31_206, 'CVE-2020-7021', 'Elastic').
+vulProperty('CVE-2020-7021', remoteExploit, privEscalation).
+networkServiceInfo(server_192_168_31_206, 'Elastic', 'tcp', 9200, 'Elastic').
+
+hacl(internet, server_192_168_31_206, 'tcp', 3306).
+vulExists(server_192_168_31_206, 'CVE-2011-3389', 'SSL_TLS_').
+vulProperty('CVE-2011-3389', remoteExploit, privEscalation).
+vulExists(server_192_168_31_206, 'CVE-2015-0204', 'SSL_TLS_').
+vulProperty('CVE-2015-0204', remoteExploit, privEscalation).
+networkServiceInfo(server_192_168_31_206, 'SSL_TLS_', 'tcp', 3306, 'SSL_TLS_').
+
+hacl(internet, server_192_168_31_206, 'tcp', 9200).
+vulExists(server_192_168_31_206, 'CVE-2020-7020', 'Elastic').
+vulProperty('CVE-2020-7020', remoteExploit, privEscalation).
+networkServiceInfo(server_192_168_31_206, 'Elastic', 'tcp', 9200, 'Elastic').
+
+hacl(internet, server_192_168_31_206, 'tcp', 22).
+networkServiceInfo(server_192_168_31_206, 'Weak', 'tcp', 22, 'Weak').
+
+hacl(internet, server_192_168_31_206, 'tcp', 2222).
+networkServiceInfo(server_192_168_31_206, 'Weak', 'tcp', 2222, 'Weak').
+
+hacl(internet, server_192_168_31_206, 'tcp', None).
+networkServiceInfo(server_192_168_31_206, 'TCP', 'tcp', None, 'TCP').
+
+hacl(internet, server_192_168_31_206, 'tcp', None).
+vulExists(server_192_168_31_206, 'CVE-1999-0524', 'ICMP').
+vulProperty('CVE-1999-0524', remoteExploit, privEscalation).
+networkServiceInfo(server_192_168_31_206, 'ICMP', 'tcp', None, 'ICMP').
+
+attackGoal(execCode(server_192_168_31_55,_)).
+
+hacl(internet, server_192_168_31_55, 'tcp', 8161).
+networkServiceInfo(server_192_168_31_55, 'Apache', 'tcp', 8161, 'Apache').
+
+hacl(internet, server_192_168_31_55, 'tcp', 8500).
+vulExists(server_192_168_31_55, 'CVE-2016-1113', 'Adobe').
+vulProperty('CVE-2016-1113', remoteExploit, privEscalation).
+vulExists(server_192_168_31_55, 'CVE-2016-1114', 'Adobe').
+vulProperty('CVE-2016-1114', remoteExploit, privEscalation).
+vulExists(server_192_168_31_55, 'CVE-2016-1115', 'Adobe').
+vulProperty('CVE-2016-1115', remoteExploit, privEscalation).
+networkServiceInfo(server_192_168_31_55, 'Adobe', 'tcp', 8500, 'Adobe').
+
+hacl(internet, server_192_168_31_55, 'tcp', 8500).
+vulExists(server_192_168_31_55, 'CVE-2017-3008', 'Adobe').
+vulProperty('CVE-2017-3008', remoteExploit, privEscalation).
+vulExists(server_192_168_31_55, 'CVE-2017-3066', 'Adobe').
+vulProperty('CVE-2017-3066', remoteExploit, privEscalation).
+networkServiceInfo(server_192_168_31_55, 'Adobe', 'tcp', 8500, 'Adobe').
+
+hacl(internet, server_192_168_31_55, 'tcp', 8500).
+vulExists(server_192_168_31_55, 'CVE-2018-4938', 'Adobe').
+vulProperty('CVE-2018-4938', remoteExploit, privEscalation).
+vulExists(server_192_168_31_55, 'CVE-2018-4939', 'Adobe').
+vulProperty('CVE-2018-4939', remoteExploit, privEscalation).
+vulExists(server_192_168_31_55, 'CVE-2018-4940', 'Adobe').
+vulProperty('CVE-2018-4940', remoteExploit, privEscalation).
+vulExists(server_192_168_31_55, 'CVE-2018-4941', 'Adobe').
+vulProperty('CVE-2018-4941', remoteExploit, privEscalation).
+vulExists(server_192_168_31_55, 'CVE-2018-4942', 'Adobe').
+vulProperty('CVE-2018-4942', remoteExploit, privEscalation).
+networkServiceInfo(server_192_168_31_55, 'Adobe', 'tcp', 8500, 'Adobe').
+
+hacl(internet, server_192_168_31_55, 'tcp', 8500).
+vulExists(server_192_168_31_55, 'CVE-2019-7091', 'Adobe').
+vulProperty('CVE-2019-7091', remoteExploit, privEscalation).
+vulExists(server_192_168_31_55, 'CVE-2019-7092', 'Adobe').
+vulProperty('CVE-2019-7092', remoteExploit, privEscalation).
+networkServiceInfo(server_192_168_31_55, 'Adobe', 'tcp', 8500, 'Adobe').
+
+hacl(internet, server_192_168_31_55, 'tcp', 8500).
+vulExists(server_192_168_31_55, 'CVE-2018-15965', 'Adobe').
+vulProperty('CVE-2018-15965', remoteExploit, privEscalation).
+vulExists(server_192_168_31_55, 'CVE-2018-15957', 'Adobe').
+vulProperty('CVE-2018-15957', remoteExploit, privEscalation).
+vulExists(server_192_168_31_55, 'CVE-2018-15958', 'Adobe').
+vulProperty('CVE-2018-15958', remoteExploit, privEscalation).
+vulExists(server_192_168_31_55, 'CVE-2018-15959', 'Adobe').
+vulProperty('CVE-2018-15959', remoteExploit, privEscalation).
+vulExists(server_192_168_31_55, 'CVE-2018-15964', 'Adobe').
+vulProperty('CVE-2018-15964', remoteExploit, privEscalation).
+vulExists(server_192_168_31_55, 'CVE-2018-15963', 'Adobe').
+vulProperty('CVE-2018-15963', remoteExploit, privEscalation).
+vulExists(server_192_168_31_55, 'CVE-2018-15962', 'Adobe').
+vulProperty('CVE-2018-15962', remoteExploit, privEscalation).
+vulExists(server_192_168_31_55, 'CVE-2018-15961', 'Adobe').
+vulProperty('CVE-2018-15961', remoteExploit, privEscalation).
+vulExists(server_192_168_31_55, 'CVE-2018-15960', 'Adobe').
+vulProperty('CVE-2018-15960', remoteExploit, privEscalation).
+networkServiceInfo(server_192_168_31_55, 'Adobe', 'tcp', 8500, 'Adobe').
+
+hacl(internet, server_192_168_31_55, 'tcp', 8500).
+vulExists(server_192_168_31_55, 'CVE-2019-7838', 'Adobe').
+vulProperty('CVE-2019-7838', remoteExploit, privEscalation).
+vulExists(server_192_168_31_55, 'CVE-2019-7840', 'Adobe').
+vulProperty('CVE-2019-7840', remoteExploit, privEscalation).
+networkServiceInfo(server_192_168_31_55, 'Adobe', 'tcp', 8500, 'Adobe').
+
+hacl(internet, server_192_168_31_55, 'tcp', 3000).
+vulExists(server_192_168_31_55, 'CVE-2022-41912', 'Grafana').
+vulProperty('CVE-2022-41912', remoteExploit, privEscalation).
+networkServiceInfo(server_192_168_31_55, 'Grafana', 'tcp', 3000, 'Grafana').
+
+hacl(internet, server_192_168_31_55, 'tcp', 8500).
+vulExists(server_192_168_31_55, 'CVE-2019-7816', 'Adobe').
+vulProperty('CVE-2019-7816', remoteExploit, privEscalation).
+networkServiceInfo(server_192_168_31_55, 'Adobe', 'tcp', 8500, 'Adobe').
+
+hacl(internet, server_192_168_31_55, 'tcp', 8500).
+vulExists(server_192_168_31_55, 'CVE-2017-11286', 'Adobe').
+vulProperty('CVE-2017-11286', remoteExploit, privEscalation).
+vulExists(server_192_168_31_55, 'CVE-2017-11285', 'Adobe').
+vulProperty('CVE-2017-11285', remoteExploit, privEscalation).
+vulExists(server_192_168_31_55, 'CVE-2017-11283', 'Adobe').
+vulProperty('CVE-2017-11283', remoteExploit, privEscalation).
+vulExists(server_192_168_31_55, 'CVE-2017-11284', 'Adobe').
+vulProperty('CVE-2017-11284', remoteExploit, privEscalation).
+networkServiceInfo(server_192_168_31_55, 'Adobe', 'tcp', 8500, 'Adobe').
+
+hacl(internet, server_192_168_31_55, 'tcp', 3000).
+vulExists(server_192_168_31_55, 'CVE-2023-3128', 'Grafana').
+vulProperty('CVE-2023-3128', remoteExploit, privEscalation).
+networkServiceInfo(server_192_168_31_55, 'Grafana', 'tcp', 3000, 'Grafana').
+
+hacl(internet, server_192_168_31_55, 'tcp', 3000).
+vulExists(server_192_168_31_55, 'CVE-2022-21703', 'Grafana').
+vulProperty('CVE-2022-21703', remoteExploit, privEscalation).
+networkServiceInfo(server_192_168_31_55, 'Grafana', 'tcp', 3000, 'Grafana').
+
+hacl(internet, server_192_168_31_55, 'tcp', 3000).
+vulExists(server_192_168_31_55, 'CVE-2022-24812', 'Grafana').
+vulProperty('CVE-2022-24812', remoteExploit, privEscalation).
+networkServiceInfo(server_192_168_31_55, 'Grafana', 'tcp', 3000, 'Grafana').
+
+hacl(internet, server_192_168_31_55, 'tcp', 3000).
+vulExists(server_192_168_31_55, 'CVE-2022-31097', 'Grafana').
+vulProperty('CVE-2022-31097', remoteExploit, privEscalation).
+networkServiceInfo(server_192_168_31_55, 'Grafana', 'tcp', 3000, 'Grafana').
+
+hacl(internet, server_192_168_31_55, 'tcp', 8500).
+vulExists(server_192_168_31_55, 'CVE-2016-4264', 'Adobe').
+vulProperty('CVE-2016-4264', remoteExploit, privEscalation).
+networkServiceInfo(server_192_168_31_55, 'Adobe', 'tcp', 8500, 'Adobe').
+
+hacl(internet, server_192_168_31_55, 'tcp', 3000).
+vulExists(server_192_168_31_55, 'CVE-2022-29170', 'Grafana').
+vulProperty('CVE-2022-29170', remoteExploit, privEscalation).
+networkServiceInfo(server_192_168_31_55, 'Grafana', 'tcp', 3000, 'Grafana').
+
+hacl(internet, server_192_168_31_55, 'tcp', 3000).
+vulExists(server_192_168_31_55, 'CVE-2022-39306', 'Grafana').
+vulProperty('CVE-2022-39306', remoteExploit, privEscalation).
+vulExists(server_192_168_31_55, 'CVE-2022-39307', 'Grafana').
+vulProperty('CVE-2022-39307', remoteExploit, privEscalation).
+networkServiceInfo(server_192_168_31_55, 'Grafana', 'tcp', 3000, 'Grafana').
+
+hacl(internet, server_192_168_31_55, 'tcp', 3000).
+vulExists(server_192_168_31_55, 'CVE-2022-31176', 'Grafana').
+vulProperty('CVE-2022-31176', remoteExploit, privEscalation).
+networkServiceInfo(server_192_168_31_55, 'Grafana', 'tcp', 3000, 'Grafana').
+
+hacl(internet, server_192_168_31_55, 'tcp', 3000).
+vulExists(server_192_168_31_55, 'CVE-2022-31123', 'Grafana').
+vulProperty('CVE-2022-31123', remoteExploit, privEscalation).
+networkServiceInfo(server_192_168_31_55, 'Grafana', 'tcp', 3000, 'Grafana').
+
+hacl(internet, server_192_168_31_55, 'tcp', 3000).
+vulExists(server_192_168_31_55, 'CVE-2022-31130', 'Grafana').
+vulProperty('CVE-2022-31130', remoteExploit, privEscalation).
+networkServiceInfo(server_192_168_31_55, 'Grafana', 'tcp', 3000, 'Grafana').
+
+hacl(internet, server_192_168_31_55, 'tcp', 3000).
+vulExists(server_192_168_31_55, 'CVE-2022-31107', 'Grafana').
+vulProperty('CVE-2022-31107', remoteExploit, privEscalation).
+networkServiceInfo(server_192_168_31_55, 'Grafana', 'tcp', 3000, 'Grafana').
+
+hacl(internet, server_192_168_31_55, 'tcp', 3000).
+vulExists(server_192_168_31_55, 'CVE-2021-43798', 'Grafana').
+vulProperty('CVE-2021-43798', remoteExploit, privEscalation).
+networkServiceInfo(server_192_168_31_55, 'Grafana', 'tcp', 3000, 'Grafana').
+
+hacl(internet, server_192_168_31_55, 'tcp', 3000).
+vulExists(server_192_168_31_55, 'CVE-2021-43798', 'Grafana').
+vulProperty('CVE-2021-43798', remoteExploit, privEscalation).
+networkServiceInfo(server_192_168_31_55, 'Grafana', 'tcp', 3000, 'Grafana').
+
+hacl(internet, server_192_168_31_55, 'tcp', 8161).
+vulExists(server_192_168_31_55, 'CVE-1999-0501', 'HTTP').
+vulProperty('CVE-1999-0501', remoteExploit, privEscalation).
+vulExists(server_192_168_31_55, 'CVE-1999-0502', 'HTTP').
+vulProperty('CVE-1999-0502', remoteExploit, privEscalation).
+vulExists(server_192_168_31_55, 'CVE-1999-0507', 'HTTP').
+vulProperty('CVE-1999-0507', remoteExploit, privEscalation).
+vulExists(server_192_168_31_55, 'CVE-1999-0508', 'HTTP').
+vulProperty('CVE-1999-0508', remoteExploit, privEscalation).
+networkServiceInfo(server_192_168_31_55, 'HTTP', 'tcp', 8161, 'HTTP').
+
+hacl(internet, server_192_168_31_55, 'tcp', 3000).
+vulExists(server_192_168_31_55, 'CVE-2022-39201', 'Grafana').
+vulProperty('CVE-2022-39201', remoteExploit, privEscalation).
+networkServiceInfo(server_192_168_31_55, 'Grafana', 'tcp', 3000, 'Grafana').
+
+hacl(internet, server_192_168_31_55, 'tcp', 3000).
+vulExists(server_192_168_31_55, 'CVE-2023-28119', 'Grafana').
+vulProperty('CVE-2023-28119', remoteExploit, privEscalation).
+networkServiceInfo(server_192_168_31_55, 'Grafana', 'tcp', 3000, 'Grafana').
+
+hacl(internet, server_192_168_31_55, 'tcp', 3000).
+vulExists(server_192_168_31_55, 'CVE-2022-35957', 'Grafana').
+vulProperty('CVE-2022-35957', remoteExploit, privEscalation).
+networkServiceInfo(server_192_168_31_55, 'Grafana', 'tcp', 3000, 'Grafana').
+
+hacl(internet, server_192_168_31_55, 'tcp', 3000).
+vulExists(server_192_168_31_55, 'CVE-2023-2183', 'Grafana').
+vulProperty('CVE-2023-2183', remoteExploit, privEscalation).
+networkServiceInfo(server_192_168_31_55, 'Grafana', 'tcp', 3000, 'Grafana').
+
+hacl(internet, server_192_168_31_55, 'tcp', 8500).
+vulExists(server_192_168_31_55, 'CVE-2016-4159', 'Adobe').
+vulProperty('CVE-2016-4159', remoteExploit, privEscalation).
+networkServiceInfo(server_192_168_31_55, 'Adobe', 'tcp', 8500, 'Adobe').
+
+hacl(internet, server_192_168_31_55, 'tcp', 3000).
+vulExists(server_192_168_31_55, 'CVE-2022-21702', 'Grafana').
+vulProperty('CVE-2022-21702', remoteExploit, privEscalation).
+networkServiceInfo(server_192_168_31_55, 'Grafana', 'tcp', 3000, 'Grafana').
+
+hacl(internet, server_192_168_31_55, 'tcp', 3000).
+vulExists(server_192_168_31_55, 'CVE-2022-23552', 'Grafana').
+vulProperty('CVE-2022-23552', remoteExploit, privEscalation).
+networkServiceInfo(server_192_168_31_55, 'Grafana', 'tcp', 3000, 'Grafana').
+
+hacl(internet, server_192_168_31_55, 'tcp', 3000).
+vulExists(server_192_168_31_55, 'CVE-2023-0507', 'Grafana').
+vulProperty('CVE-2023-0507', remoteExploit, privEscalation).
+vulExists(server_192_168_31_55, 'CVE-2023-0594', 'Grafana').
+vulProperty('CVE-2023-0594', remoteExploit, privEscalation).
+networkServiceInfo(server_192_168_31_55, 'Grafana', 'tcp', 3000, 'Grafana').
+
+hacl(internet, server_192_168_31_55, 'tcp', 3000).
+vulExists(server_192_168_31_55, 'CVE-2023-2801', 'Grafana').
+vulProperty('CVE-2023-2801', remoteExploit, privEscalation).
+networkServiceInfo(server_192_168_31_55, 'Grafana', 'tcp', 3000, 'Grafana').
+
+hacl(internet, server_192_168_31_55, 'tcp', 2379).
+networkServiceInfo(server_192_168_31_55, 'etcd', 'tcp', 2379, 'etcd').
+
+hacl(internet, server_192_168_31_55, 'tcp', 8161).
+networkServiceInfo(server_192_168_31_55, 'Cleartext', 'tcp', 8161, 'Cleartext').
+
+hacl(internet, server_192_168_31_55, 'tcp', 3000).
+vulExists(server_192_168_31_55, 'CVE-2023-1410', 'Grafana').
+vulProperty('CVE-2023-1410', remoteExploit, privEscalation).
+networkServiceInfo(server_192_168_31_55, 'Grafana', 'tcp', 3000, 'Grafana').
+
+hacl(internet, server_192_168_31_55, 'tcp', 3000).
+vulExists(server_192_168_31_55, 'CVE-2022-21673', 'Grafana').
+vulProperty('CVE-2022-21673', remoteExploit, privEscalation).
+networkServiceInfo(server_192_168_31_55, 'Grafana', 'tcp', 3000, 'Grafana').
+
+hacl(internet, server_192_168_31_55, 'tcp', 3000).
+vulExists(server_192_168_31_55, 'CVE-2022-39229', 'Grafana').
+vulProperty('CVE-2022-39229', remoteExploit, privEscalation).
+networkServiceInfo(server_192_168_31_55, 'Grafana', 'tcp', 3000, 'Grafana').
+
+hacl(internet, server_192_168_31_55, 'tcp', 8500).
+vulExists(server_192_168_31_55, 'CVE-2012-2041', 'Adobe').
+vulProperty('CVE-2012-2041', remoteExploit, privEscalation).
+networkServiceInfo(server_192_168_31_55, 'Adobe', 'tcp', 8500, 'Adobe').
+
+hacl(internet, server_192_168_31_55, 'tcp', 2379).
+vulExists(server_192_168_31_55, 'CVE-2023-32082', 'etcd').
+vulProperty('CVE-2023-32082', remoteExploit, privEscalation).
+networkServiceInfo(server_192_168_31_55, 'etcd', 'tcp', 2379, 'etcd').
+
+hacl(internet, server_192_168_31_55, 'tcp', 3000).
+vulExists(server_192_168_31_55, 'CVE-2021-43815', 'Grafana').
+vulProperty('CVE-2021-43815', remoteExploit, privEscalation).
+networkServiceInfo(server_192_168_31_55, 'Grafana', 'tcp', 3000, 'Grafana').
+
+hacl(internet, server_192_168_31_55, 'tcp', 3000).
+vulExists(server_192_168_31_55, 'CVE-2022-21713', 'Grafana').
+vulProperty('CVE-2022-21713', remoteExploit, privEscalation).
+networkServiceInfo(server_192_168_31_55, 'Grafana', 'tcp', 3000, 'Grafana').
+
+hacl(internet, server_192_168_31_55, 'tcp', 3000).
+vulExists(server_192_168_31_55, 'CVE-2021-43813', 'Grafana').
+vulProperty('CVE-2021-43813', remoteExploit, privEscalation).
+vulExists(server_192_168_31_55, 'CVE-2021-43815', 'Grafana').
+vulProperty('CVE-2021-43815', remoteExploit, privEscalation).
+networkServiceInfo(server_192_168_31_55, 'Grafana', 'tcp', 3000, 'Grafana').
+
+hacl(internet, server_192_168_31_55, 'tcp', 8500).
+vulExists(server_192_168_31_55, 'CVE-2015-8052', 'Adobe').
+vulProperty('CVE-2015-8052', remoteExploit, privEscalation).
+vulExists(server_192_168_31_55, 'CVE-2015-8053', 'Adobe').
+vulProperty('CVE-2015-8053', remoteExploit, privEscalation).
+vulExists(server_192_168_31_55, 'CVE-2015-5255', 'Adobe').
+vulProperty('CVE-2015-5255', remoteExploit, privEscalation).
+networkServiceInfo(server_192_168_31_55, 'Adobe', 'tcp', 8500, 'Adobe').
+
+hacl(internet, server_192_168_31_55, 'tcp', 3000).
+vulExists(server_192_168_31_55, 'CVE-2022-39324', 'Grafana').
+vulProperty('CVE-2022-39324', remoteExploit, privEscalation).
+networkServiceInfo(server_192_168_31_55, 'Grafana', 'tcp', 3000, 'Grafana').
+
+hacl(internet, server_192_168_31_55, 'tcp', 22).
+networkServiceInfo(server_192_168_31_55, 'Weak', 'tcp', 22, 'Weak').
+
+hacl(internet, server_192_168_31_55, 'tcp', None).
+networkServiceInfo(server_192_168_31_55, 'TCP', 'tcp', None, 'TCP').
+
+hacl(internet, server_192_168_31_55, 'tcp', None).
+vulExists(server_192_168_31_55, 'CVE-1999-0524', 'ICMP').
+vulProperty('CVE-1999-0524', remoteExploit, privEscalation).
+networkServiceInfo(server_192_168_31_55, 'ICMP', 'tcp', None, 'ICMP').
+

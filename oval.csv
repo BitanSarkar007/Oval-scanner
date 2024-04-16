@@ -1,0 +1,1427 @@
+IP,Hostname,Port,Port Protocol,CVSS,Severity,QoD,Solution Type,NVT Name,Summary,Specific Result,NVT OID,CVEs,Task ID,Task Name,Timestamp,Result ID,Impact,Solution,Affected Software/OS,Vulnerability Insight,Vulnerability Detection Method,Product Detection Result,BIDs,CERTs,Other References
+192.168.31.206,vuln-1.lan,9200,tcp,10.0,High,80,"VendorFix","Elasticsearch End of Life (EOL) Detection","The Elasticsearch version on the remote host has reached
+  the End of Life (EOL) and should not be used anymore.","The ""Elasticsearch"" version on the remote host has reached the end of life.
+
+CPE:               cpe:/a:elastic:elasticsearch:1.4.2
+Installed version: 1.4.2
+EOL version:       1.4
+EOL date:          2016-05-05
+",1.3.6.1.4.1.25623.1.0.113131,"",6bda9821-003a-41a9-88f2-f7a59ec30bb2,"vulnopen",2024-04-15T16:11:25Z,c8401ab1-54a4-45d6-b457-66c67c3b0dfb,"An EOL version of Elasticsearch is not receiving any security
+  updates from the vendor. Unfixed security vulnerabilities might be leveraged by an attacker to
+  compromise the security of this host.","Update Elasticsearch to a version that still receives technical support and updates.","","","Checks if an EOL version is present on the target host.
+Details:
+Elasticsearch End of Life (EOL) Detection
+(OID: 1.3.6.1.4.1.25623.1.0.113131)
+Version used: 2023-07-20T05:05:17Z
+","","","",""
+192.168.31.55,vuln-1.lan,8161,tcp,10.0,High,98,"Mitigation","Apache ActiveMQ Web Console Default / No Credentials (HTTP)","The Apache ActiveMQ Web Console is unprotected or is using
+  default credentials.","It was possible to access the Apache ActiveMQ Web Console at:
+
+http://vuln-1.lan:8161/admin/index.jsp using user ""admin"" with password ""admin""
+
+http://vuln-1.lan:8161/admin/index.jsp using user ""user"" with password ""user""
+",1.3.6.1.4.1.25623.1.0.108253,"",6bda9821-003a-41a9-88f2-f7a59ec30bb2,"vulnopen",2024-04-15T16:11:25Z,0ca04500-fe2f-49b6-b60c-3d8378e4584a,"This issue may be exploited by a remote attacker to gain access
+  to sensitive information.","Change or set the password.","","","
+Details:
+Apache ActiveMQ Web Console Default / No Credentials (HTTP)
+(OID: 1.3.6.1.4.1.25623.1.0.108253)
+Version used: 2023-02-28T10:20:42Z
+","","","",""
+192.168.31.55,vuln-1.lan,8500,tcp,9.8,High,80,"VendorFix","Adobe ColdFusion Multiple Vulnerabilities (APSB16-16)","Adobe ColdFusion is prone to multiple vulnerabilities.","Installed version: 11.0.03.292866
+Fixed version:     11.0.08.298512
+Installation
+path / port:       /
+
+",1.3.6.1.4.1.25623.1.0.807588,"CVE-2016-1113,CVE-2016-1114,CVE-2016-1115",6bda9821-003a-41a9-88f2-f7a59ec30bb2,"vulnopen",2024-04-15T16:11:25Z,8202a4e0-76ff-42b1-bb08-1c2bf7cf9952,"Successful exploitation will allow remote
+  attackers to inject arbitrary web script or HTML via unspecified vectors
+  and allow man-in-the-middle attackers to spoof servers.","Upgrade to version 10 Update 19 or
+  11 Update 8 or later.","ColdFusion 10 before Update 19 and
+  11 before Update 8.","Multiple flaws are due to:
+
+  - An insufficient validation of user supplied input via unspecified vectors.
+
+  - An important Java deserialization vulnerability in
+    Apache Commons Collections library.
+
+  - The mishandling of wildcards in name fields of X.509 certificates.","Checks if a vulnerable version is present on the target host.
+Details:
+Adobe ColdFusion Multiple Vulnerabilities (APSB16-16)
+(OID: 1.3.6.1.4.1.25623.1.0.807588)
+Version used: 2023-07-21T05:05:22Z
+","","","DFN-CERT-2016-0748,CB-K16/0695",""
+192.168.31.55,vuln-1.lan,8500,tcp,9.8,High,80,"VendorFix","Adobe ColdFusion Multiple Vulnerabilities (APSB17-14)","Adobe ColdFusion is prone to cross site scripting (XSS)
+  and remote code execution (RCE) vulnerabilities.","Installed version: 11.0.03.292866
+Fixed version:     11.0.12.302575
+Installation
+path / port:       /
+
+",1.3.6.1.4.1.25623.1.0.810938,"CVE-2017-3008,CVE-2017-3066",6bda9821-003a-41a9-88f2-f7a59ec30bb2,"vulnopen",2024-04-15T16:11:25Z,0f5cc2c0-7146-4fb7-a777-2106da4c8b36,"Successful exploitation will allow remote
+  attackers to execute arbitrary code in the context of the affected application.
+  Failed exploits will result in denial-of-service conditions, steal cookie-based
+  authentication credentials and to launch other attacks.","Upgrade to version 11 Update 12 or
+  10 Update 23 or 2016 update 4 or later.","ColdFusion 11 before 11 Update 12,
+  and 10 before 10 Update 23, ColdFusion 2016 before update 4.","Multiple flaws are due to:
+
+  - An unspecified input validation error.
+
+  - A java deserialization error.","Checks if a vulnerable version is present on the target host.
+Details:
+Adobe ColdFusion Multiple Vulnerabilities (APSB17-14)
+(OID: 1.3.6.1.4.1.25623.1.0.810938)
+Version used: 2023-07-25T05:05:58Z
+","","","DFN-CERT-2017-0718,CB-K17/0696",""
+192.168.31.55,vuln-1.lan,8500,tcp,9.8,High,80,"VendorFix","Adobe ColdFusion Multiple Vulnerabilities (APSB18-14)","Adobe ColdFusion is prone to multiple vulnerabilities.","Installed version: 11.0.03.292866
+Fixed version:     11.0.14.307976
+Installation
+path / port:       /
+
+",1.3.6.1.4.1.25623.1.0.813083,"CVE-2018-4938,CVE-2018-4939,CVE-2018-4940,CVE-2018-4941,CVE-2018-4942",6bda9821-003a-41a9-88f2-f7a59ec30bb2,"vulnopen",2024-04-15T16:11:25Z,5d776793-42d0-47b3-8831-6b05b15af5cf,"Successful exploitation will allow remote
+  attackers to execute arbitrary code in the context of the affected application,
+  disclose sensitive information and also to escalate privileges.","Upgrade Adobe ColdFusion 11 Update 14 or later. Please see the references for more information.","Adobe ColdFusion version 11 before Update 14.","Multiple flaws are due to:
+
+  - An insecure library loading error.
+
+  - Multiple input validation errors.
+
+  - An unsafe XML parsing error.
+
+  - The deserialization of untrusted data.","Checks if a vulnerable version is present on the target host.
+Details:
+Adobe ColdFusion Multiple Vulnerabilities (APSB18-14)
+(OID: 1.3.6.1.4.1.25623.1.0.813083)
+Version used: 2023-07-20T05:05:17Z
+","","","DFN-CERT-2018-0683",""
+192.168.31.206,vuln-1.lan,3306,tcp,9.8,High,95,"Mitigation","MySQL / MariaDB Default Credentials (MySQL Protocol)","It was possible to login into the remote MySQL as
+  root using weak credentials.","It was possible to login as root with password ""root"".
+
+
+",1.3.6.1.4.1.25623.1.0.103551,"CVE-2001-0645,CVE-2004-2357,CVE-2006-1451,CVE-2007-2554,CVE-2007-6081,CVE-2009-0919,CVE-2014-3419,CVE-2015-4669,CVE-2016-6531,CVE-2018-15719",6bda9821-003a-41a9-88f2-f7a59ec30bb2,"vulnopen",2024-04-15T16:11:25Z,7457fac8-cf66-4f55-ac63-9a665d3a3ad8,"","'- Change the password as soon as possible
+
+  - Contact the vendor for other possible fixes / updates","The following products are know to use such weak credentials:
+
+  - CVE-2001-0645: Symantec/AXENT NetProwler 3.5.x
+
+  - CVE-2004-2357: Proofpoint Protection Server
+
+  - CVE-2006-1451: MySQL Manager in Apple Mac OS X 10.3.9 and 10.4.6
+
+  - CVE-2007-2554: Associated Press (AP) Newspower 4.0.1 and earlier
+
+  - CVE-2007-6081: AdventNet EventLog Analyzer build 4030
+
+  - CVE-2009-0919: XAMPP
+
+  - CVE-2014-3419: Infoblox NetMRI before 6.8.5
+
+  - CVE-2015-4669: Xsuite 2.x
+
+  - CVE-2016-6531, CVE-2018-15719: Open Dental before version 18.4
+
+  Other products might be affected as well.","","
+Details:
+MySQL / MariaDB Default Credentials (MySQL Protocol)
+(OID: 1.3.6.1.4.1.25623.1.0.103551)
+Version used: 2023-11-02T05:05:26Z
+","Product: cpe:/a:mysql:mysql:5.7.39
+Method: MariaDB / Oracle MySQL Detection (MySQL Protocol)
+(OID: 1.3.6.1.4.1.25623.1.0.100152)
+","","",""
+192.168.31.55,vuln-1.lan,8500,tcp,9.8,High,80,"VendorFix","Adobe ColdFusion Multiple Vulnerabilities (APSB19-10)","Adobe ColdFusion is prone to code execution and
+  information disclosure vulnerabilities.","Installed version: 11.0.03.292866
+Fixed version:     ColdFusion 11 Update 16
+Installation
+path / port:       /
+
+",1.3.6.1.4.1.25623.1.0.814687,"CVE-2019-7091,CVE-2019-7092",6bda9821-003a-41a9-88f2-f7a59ec30bb2,"vulnopen",2024-04-15T16:11:25Z,afa17afa-ee4c-41f3-9f61-5b4f1f4cbf15,"Successful exploitation will allow remote
+  attackers to execute arbitrary code in the context of the affected application
+  and disclose sensitive information.","Upgrade to Adobe ColdFusion 11 Update 16 or
+  later. Please see the references for more information.","Adobe ColdFusion version 11 before Update 16.","Multiple flaws are due to an improper validation
+  and deserialization of untrusted data.","Checks if a vulnerable version is present
+  on the target host.
+Details:
+Adobe ColdFusion Multiple Vulnerabilities (APSB19-10)
+(OID: 1.3.6.1.4.1.25623.1.0.814687)
+Version used: 2023-09-19T05:06:03Z
+","","","DFN-CERT-2019-0301",""
+192.168.31.55,vuln-1.lan,8500,tcp,9.8,High,80,"VendorFix","Adobe ColdFusion Multiple Vulnerabilities (APSB18-33)","Adobe ColdFusion is prone to multiple vulnerabilities.","Installed version: 11.0.03.292866
+Fixed version:     11.0.15.311399
+Installation
+path / port:       /
+
+",1.3.6.1.4.1.25623.1.0.813925,"CVE-2018-15965,CVE-2018-15957,CVE-2018-15958,CVE-2018-15959,CVE-2018-15964,CVE-2018-15963,CVE-2018-15962,CVE-2018-15961,CVE-2018-15960",6bda9821-003a-41a9-88f2-f7a59ec30bb2,"vulnopen",2024-04-15T16:11:25Z,22200ffc-b137-45a9-b1a2-ca4a00e9e548,"Successful exploitation will allow remote
+  attackers to execute arbitrary code, disclose information, create arbitrary
+  page and overwrite arbitrary file.","Upgrade Adobe ColdFusion to ColdFusion 2018
+  Update 1 or ColdFusion 2016 Update 7 or ColdFusion 11 Update 15 or later. Please see the references for more information.","Adobe ColdFusion 2018 (July 12 release),
+  ColdFusion 2016 update 6 and earlier, ColdFusion 11 Update 14 and earlier.","Multiple flaws are due to:
+
+  - An error while deserialization of untrusted data.
+
+  - Use of a component with a known vulnerability.
+
+  - A security bypass vulnerability.
+
+  - Unauthorized access to directory listing.
+
+  - Unrestricted file upload.","Checks if a vulnerable version is present on the target host.
+Details:
+Adobe ColdFusion Multiple Vulnerabilities (APSB18-33)
+(OID: 1.3.6.1.4.1.25623.1.0.813925)
+Version used: 2023-07-20T05:05:17Z
+","","","DFN-CERT-2018-1841",""
+192.168.31.55,vuln-1.lan,8500,tcp,9.8,High,80,"VendorFix","Adobe ColdFusion Multiple Vulnerabilities (APSB19-27)","Adobe ColdFusion is prone to multiple vulnerabilities.","Installed version: 11.0.03.292866
+Fixed version:     11.0.19.314546
+Installation
+path / port:       /
+
+",1.3.6.1.4.1.25623.1.0.112084,"CVE-2019-7838,CVE-2019-7840",6bda9821-003a-41a9-88f2-f7a59ec30bb2,"vulnopen",2024-04-15T16:11:25Z,9e37007a-35e6-4c29-94e3-a1c3d56862d6,"Successful exploitation could lead to arbitrary code execution.","Update to version 11 Update 19, version 2016 Update 11 or version 2018 Update 4 respectively.","Adobe ColdFusion version 11 prior to Update 19, version 2016 prior to Update 11 and version 2018 prior to Update 4.","The following vulnerabilities exist:
+
+  - File extension blacklist bypass (CVE-2019-7838)
+
+  - Deserialization of untrusted data (CVE-2019-7840)","Checks if a vulnerable version is present on the target host.
+Details:
+Adobe ColdFusion Multiple Vulnerabilities (APSB19-27)
+(OID: 1.3.6.1.4.1.25623.1.0.112084)
+Version used: 2021-08-30T14:01:20Z
+","","","DFN-CERT-2019-1168",""
+192.168.31.55,vuln-1.lan,3000,tcp,9.8,High,80,"VendorFix","Grafana 6.3.0-beta1 < 8.5.16, 9.x < 9.2.8, 9.3.0 < 9.3.2 SAML Privilege Escalation Vulnerability (GHSA-5hcf-rqj9-xh96)","Grafana is prone to a privilege escalation vulnerability via
+  SAML.","Installed version: 8.2.6
+Fixed version:     8.5.16
+Installation
+path / port:       /
+
+",1.3.6.1.4.1.25623.1.0.149215,"CVE-2022-41912",6bda9821-003a-41a9-88f2-f7a59ec30bb2,"vulnopen",2024-04-15T16:11:25Z,ad4ae7b9-c415-451f-b9fc-2edff3da478f,"","Update to version 8.5.16, 9.2.8, 9.3.2 or later.","Grafana version 6.3.0-beta1 through 9.3.1.","Grafana Enterprise is using crewjam/saml library for SAML
+  integration. On Nov 30, 2022 an advisory and relevant fix was published in the upstream library,
+  which described a vulnerability allowing privilege escalation when processing SAML responses
+  containing multiple assertions.
+
+  The vulnerability is possible to exploit only when a SAML document is not signed and multiple
+  assertions are being used, where at least one assertion is signed. As a result, an attacker could
+  intercept the SAML response and add any unsigned assertion, which would be parsed as signed by
+  the library.","Checks if a vulnerable version is present on the target host.
+Details:
+Grafana 6.3.0-beta1 < 8.5.16, 9.x < 9.2.8, 9.3.0 < 9.3.2 SAML Privilege Esca...
+(OID: 1.3.6.1.4.1.25623.1.0.149215)
+Version used: 2023-10-13T05:06:10Z
+","","","DFN-CERT-2023-1395,DFN-CERT-2023-0323,DFN-CERT-2023-0291,DFN-CERT-2023-0044,DFN-CERT-2023-0030,DFN-CERT-2022-2864,WID-SEC-2023-0202,WID-SEC-2022-2338",""
+192.168.31.55,vuln-1.lan,8500,tcp,9.8,High,80,"VendorFix","Adobe ColdFusion RCE Vulnerability (APSB19-14)","Adobe ColdFusion is prone to a file upload restriction bypass vulnerability.","Installed version: 11.0.03.292866
+Fixed version:     11.0.18.314030
+Installation
+path / port:       /
+
+",1.3.6.1.4.1.25623.1.0.142476,"CVE-2019-7816",6bda9821-003a-41a9-88f2-f7a59ec30bb2,"vulnopen",2024-04-15T16:11:25Z,85a91b3d-8fb0-4884-8578-2fff9e115be0,"Successful exploitation could lead to arbitrary code execution.","Update to version 11 Update 18 or later.","Adobe ColdFusion version 11 prior to Update 18.","","Checks if a vulnerable version is present on the target host.
+Details:
+Adobe ColdFusion RCE Vulnerability (APSB19-14)
+(OID: 1.3.6.1.4.1.25623.1.0.142476)
+Version used: 2021-08-30T14:01:20Z
+","","","DFN-CERT-2019-0444",""
+192.168.31.55,vuln-1.lan,8500,tcp,9.8,High,80,"VendorFix","Adobe ColdFusion Remote Code Execution And Information Disclosure Vulnerabilities (APSB17-30)","Adobe ColdFusion is prone to information disclosure and
+  remote code execution vulnerabilities.","Installed version: 11.0.03.292866
+Fixed version:     11.0.13.303668
+Installation
+path / port:       /
+
+",1.3.6.1.4.1.25623.1.0.811696,"CVE-2017-11286,CVE-2017-11285,CVE-2017-11283,CVE-2017-11284",6bda9821-003a-41a9-88f2-f7a59ec30bb2,"vulnopen",2024-04-15T16:11:25Z,42e01855-cd2b-4ec1-9220-57471f829a88,"Successful exploitation will allow remote
+  attackers to execute arbitrary code in the context of the affected application
+  and gain access to sensitive information.","Upgrade to ColdFusion 11 Update 13 or 2016
+  update 5 or later.","ColdFusion 11 before Update 13 and ColdFusion
+  2016 before update 5.","Multiple flaws are due to:
+
+  - Improper Restriction of XML External Entity Reference.
+
+  - Improper Neutralization of Input During Web Page Generation.
+
+  - Deserialization of Untrusted Data.","Checks if a vulnerable version is present on the target host.
+Details:
+Adobe ColdFusion Remote Code Execution And Information Disclosure Vulnerabil...
+(OID: 1.3.6.1.4.1.25623.1.0.811696)
+Version used: 2023-07-25T05:05:58Z
+","","","DFN-CERT-2017-1609,CB-K17/1542",""
+192.168.31.55,vuln-1.lan,3000,tcp,9.8,High,80,"VendorFix","Grafana 6.7.x < 8.5.27, 9.x < 9.2.20, 9.3.x < 9.3.16, 9.4.x < 9.4.13, 9.5.x < 9.5.5, 10.x < 10.0.1 Authentication Bypass Vulnerability","Grafana is prone to an authentication bypass vulnerability.","Installed version: 8.2.6
+Fixed version:     8.5.27
+Installation
+path / port:       /
+
+",1.3.6.1.4.1.25623.1.0.124342,"CVE-2023-3128",6bda9821-003a-41a9-88f2-f7a59ec30bb2,"vulnopen",2024-04-15T16:11:25Z,cd8026dc-61ac-48e2-87d2-8bd3d97e4fea,"","Update to version 8.5.27, 9.2.20, 9.3.16, 9.4.13, 9.5.5,
+  10.0.1 or later.","Grafana versions 6.7.x prior to 8.5.27, version 9.x prior to 9.2.20,
+  9.3.x prior to 9.3.16, 9.4.x prior to 9.4.13, 9.5.x prior to 9.5.5 and 10.x prior to 10.0.1.","Grafana validates Azure Active Directory accounts based on the
+  email claim. On Azure AD, the profile email field is not unique across Azure AD tenants. This
+  can enable a Grafana account takeover and authentication bypass when Azure AD OAuth is configured
+  with a multi-tenant Azure AD OAuth application.","Checks if a vulnerable version is present on the target host.
+Details:
+Grafana 6.7.x < 8.5.27, 9.x < 9.2.20, 9.3.x < 9.3.16, 9.4.x < 9.4.13, 9.5.x ...
+(OID: 1.3.6.1.4.1.25623.1.0.124342)
+Version used: 2023-10-13T05:06:10Z
+","","","DFN-CERT-2023-1676,DFN-CERT-2023-1588,WID-SEC-2023-1551",""
+192.168.31.55,vuln-1.lan,3000,tcp,8.8,High,80,"VendorFix","Grafana CSRF Vulnerability (GHSA-cmf4-h3xc-jw8w)","Grafana is prone to a cross-site request forgery (CSRF)
+  vulnerability.","Installed version: 8.2.6
+Fixed version:     8.3.5
+Installation
+path / port:       /
+
+",1.3.6.1.4.1.25623.1.0.147617,"CVE-2022-21703",6bda9821-003a-41a9-88f2-f7a59ec30bb2,"vulnopen",2024-04-15T16:11:25Z,7a712d2d-6074-4e3d-ab88-9c087e0fc34a,"","Update to version 7.5.15, 8.3.5 or later.","Grafana version 3.0-beta1 through 7.5.14 and 8.x through 8.3.4.","","An attacker can exploit this vulnerability for privilege
+  escalation by tricking an authenticated user into inviting the attacker as a new user with
+  high privileges.
+Details:
+Grafana CSRF Vulnerability (GHSA-cmf4-h3xc-jw8w)
+(OID: 1.3.6.1.4.1.25623.1.0.147617)
+Version used: 2022-05-02T03:04:50Z
+","","","DFN-CERT-2022-2496,DFN-CERT-2022-2397,DFN-CERT-2022-2350,DFN-CERT-2022-1386,DFN-CERT-2022-0922,DFN-CERT-2022-0794,WID-SEC-2022-0407,CB-K22/0159",""
+192.168.31.55,vuln-1.lan,3000,tcp,8.8,High,80,"VendorFix","Grafana OAuth Privilege Escalation Vulnerability (GHSA-82gq-xfg3-5j7v)","Grafana is prone to a privilege escalation vulnerability.","Installed version: 8.2.6
+Fixed version:     8.4.6
+Installation
+path / port:       /
+
+",1.3.6.1.4.1.25623.1.0.147986,"CVE-2022-24812",6bda9821-003a-41a9-88f2-f7a59ec30bb2,"vulnopen",2024-04-15T16:11:25Z,392e9462-c76b-49bd-9774-12ac9378742d,"","Update to version 8.4.6 or later.","Grafana Enterprise version 8.1.0-beta1 through 8.4.5.","When fine-grained access control is enabled and a client uses
+  Grafana API Key to make requests, the permissions for that API Key are cached for 30 seconds for
+  the given organization. Because of the way the cache ID is constructed, the consequent requests
+  with any API Key evaluate to the same permissions as the previous requests. This can lead to an
+  escalation of privileges, when for example a first request is made with Admin permissions, and
+  the second request with different API Key is made with Viewer permissions, the second request
+  will get the cached permissions from the previous Admin, essentially accessing higher privilege
+  than it should.","Checks if a vulnerable version is present on the target host.
+Details:
+Grafana OAuth Privilege Escalation Vulnerability (GHSA-82gq-xfg3-5j7v)
+(OID: 1.3.6.1.4.1.25623.1.0.147986)
+Version used: 2022-04-21T11:37:11Z
+","","","CB-K22/0434",""
+192.168.31.55,vuln-1.lan,3000,tcp,8.7,High,80,"VendorFix","Grafana XSS Vulnerability (GHSA-vw7q-p2qg-4m5f)","Grafana is prone to a cross-site scripting (XSS) vulnerability.","Installed version: 8.2.6
+Fixed version:     8.3.10
+Installation
+path / port:       /
+
+",1.3.6.1.4.1.25623.1.0.148469,"CVE-2022-31097",6bda9821-003a-41a9-88f2-f7a59ec30bb2,"vulnopen",2024-04-15T16:11:25Z,136528e6-89a5-49b3-a9f4-814f2cde1646,"An attacker can exploit this vulnerability to escalate privilege
+  from editor to admin by tricking an authenticated admin to click on a link.","Update to version 8.3.10, 8.4.10, 8.5.9, 9.0.3 or later.","Grafana version 8.x through 8.3.9, 8.4.x through 8.4.9, 8.5.x
+  through 8.5.8 and 9.x through 9.0.2.","","Checks if a vulnerable version is present on the target host.
+Details:
+Grafana XSS Vulnerability (GHSA-vw7q-p2qg-4m5f)
+(OID: 1.3.6.1.4.1.25623.1.0.148469)
+Version used: 2023-10-18T05:05:17Z
+","","","DFN-CERT-2023-1430,DFN-CERT-2023-1395,DFN-CERT-2022-2825,DFN-CERT-2022-2397,DFN-CERT-2022-2395,DFN-CERT-2022-2394,DFN-CERT-2022-2350,WID-SEC-2022-0696",""
+192.168.31.55,vuln-1.lan,8500,tcp,8.6,High,80,"VendorFix","Adobe ColdFusion XML External Entity Information Disclosure Vulnerability (APSB16-30)","Adobe ColdFusion is prone to an information disclosure vulnerability.","Installed version: 11.0.03.292866
+Fixed version:     11.0.10.300066
+Installation
+path / port:       /
+
+",1.3.6.1.4.1.25623.1.0.809027,"CVE-2016-4264",6bda9821-003a-41a9-88f2-f7a59ec30bb2,"vulnopen",2024-04-15T16:11:25Z,b658704d-fc2f-47bc-aea8-291babf424a1,"Successful exploitation will allow remote
+  attackers to obtain sensitive information about the application.","Upgrade to version 10 Update 21 or
+  11 Update 10 or later.","ColdFusion 10 before Update 21 and
+  11 before Update 10.","The flaw is due to an error in parsing
+  crafted XML entities.","Checks if a vulnerable version is present on the target host.
+Details:
+Adobe ColdFusion 'XML External Entity' Information Disclosure Vulnerability ...
+(OID: 1.3.6.1.4.1.25623.1.0.809027)
+Version used: 2023-07-21T05:05:22Z
+","","","DFN-CERT-2016-1411,CB-K16/1324",""
+192.168.31.55,vuln-1.lan,3000,tcp,8.5,High,80,"VendorFix","Grafana Datasource Network Restriction Bypass Vulnerability (GHSA-9rrr-6fq2-4f99)","Grafana is prone to a datasource network restriction bypass
+  vulnerability.","Installed version: 8.2.6
+Fixed version:     8.5.3
+Installation
+path / port:       /
+
+",1.3.6.1.4.1.25623.1.0.148162,"CVE-2022-29170",6bda9821-003a-41a9-88f2-f7a59ec30bb2,"vulnopen",2024-04-15T16:11:25Z,bd58241e-b269-4e1e-8d22-1019587aac1a,"The vulnerability is only impacting Grafana Enterprise when the
+  'Request security allow list' is used and there is a possibility to add a custom datasource to
+  Grafana which returns HTTP redirects. In this scenario, Grafana would blindly follow the
+  redirects and potentially give secure information to the clients.","Update to version 7.5.16, 8.5.3 or later.","Grafana version 7.4.x through 7.5.15 and 8.x through 8.5.2.","In Grafana Enterprise, 'Request security allow list' allows to
+  configure Grafana in a way so that the instance doesn't call or only calls specific hosts.
+
+  The vulnerability allows to bypass these security configurations if a malicious datasource
+  (running on an allowed host) returns an HTTP redirect to a forbidden host.","Checks if a vulnerable version is present on the target host.
+Details:
+Grafana Datasource Network Restriction Bypass Vulnerability (GHSA-9rrr-6fq2-...
+(OID: 1.3.6.1.4.1.25623.1.0.148162)
+Version used: 2022-06-03T10:57:19Z
+","","","DFN-CERT-2022-2825,WID-SEC-2022-1907,CB-K22/0639",""
+192.168.31.55,vuln-1.lan,3000,tcp,8.1,High,80,"VendorFix","Grafana < 8.5.15, 9 < 9.2.4 Multiple Vulnerabilities","Grafana is prone to multiple vulnerabilities.","Installed version: 8.2.6
+Fixed version:     8.5.15
+Installation
+path / port:       /
+
+",1.3.6.1.4.1.25623.1.0.126208,"CVE-2022-39306,CVE-2022-39307",6bda9821-003a-41a9-88f2-f7a59ec30bb2,"vulnopen",2024-04-15T16:11:25Z,e7b5345b-d70b-497a-9877-a0dd36266631,"","Update to version 8.5.15, 9.2.4 or later.","Grafana prior to version 8.5.15 and version 9 prior to
+  9.2.4.","The following vulnerabilities exist:
+
+  - CVE-2022-39306: Vulnerability makes it possible to use the invitation link to sign up with an
+  arbitrary username/email with a malicious intent
+
+  - CVE-2022-39307: The impacted endpoint leaks information to unauthenticated users and introduces
+  a security risk.","Checks if a vulnerable version is present on the target host.
+Details:
+Grafana < 8.5.15, 9 < 9.2.4 Multiple Vulnerabilities
+(OID: 1.3.6.1.4.1.25623.1.0.126208)
+Version used: 2023-10-18T05:05:17Z
+","","","DFN-CERT-2023-2756,DFN-CERT-2023-1395,DFN-CERT-2023-0322,WID-SEC-2023-0334",""
+192.168.31.55,vuln-1.lan,3000,tcp,8.1,High,80,"VendorFix","Grafana Image Renderer Vulnerability (GHSA-2cfh-233g-m4c5)","Grafana is prone to a vulnerability in Grafana Image Renderer.","Installed version: 8.2.6
+Fixed version:     8.3.11
+Installation
+path / port:       /
+
+",1.3.6.1.4.1.25623.1.0.148673,"CVE-2022-31176",6bda9821-003a-41a9-88f2-f7a59ec30bb2,"vulnopen",2024-04-15T16:11:25Z,afd6d740-201b-4972-87ce-144f3cfc3f2c,"","Update to version 8.3.11, 8.4.11, 8.5.11, 9.0.8, 9.1.2 or
+  later.","Grafana version 9.x and prior.","The Chromium browser embedded in the Grafana image renderer
+  allows for 'printing' of unauthorized files in a PNG file. This makes it possible for a malicious
+  user to retrieve unauthorized files under some network conditions or via a fake datasource (if
+  the user has admin permissions in Grafana). This vulnerability permits unauthorized file
+  disclosure and is a potential DoS vector through targeting of extremely large files.","Checks if a vulnerable version is present on the target host.
+Details:
+Grafana Image Renderer Vulnerability (GHSA-2cfh-233g-m4c5)
+(OID: 1.3.6.1.4.1.25623.1.0.148673)
+Version used: 2023-10-18T05:05:17Z
+","","","WID-SEC-2022-1221",""
+192.168.31.55,vuln-1.lan,3000,tcp,7.8,High,80,"VendorFix","Grafana Privilege Escalation Vulnerability (GHSA-rhxj-gh46-jvw8)","Grafana is prone to a privilege escalation vulnerability.","Installed version: 8.2.6
+Fixed version:     8.5.14
+Installation
+path / port:       /
+
+",1.3.6.1.4.1.25623.1.0.124200,"CVE-2022-31123",6bda9821-003a-41a9-88f2-f7a59ec30bb2,"vulnopen",2024-04-15T16:11:25Z,b1f5bb74-1961-4608-b2a3-deec97e76b0c,"An attacker can convince a server admin to download and
+  successfully run a malicious plugin even though unsigned plugins are not allowed.","Update to version 8.5.14, 9.1.8 or later.","Grafana version 7.x through 8.5.13, 9.x through 9.1.7.","","Checks if a vulnerable version is present on the target host.
+Details:
+Grafana Privilege Escalation Vulnerability (GHSA-rhxj-gh46-jvw8)
+(OID: 1.3.6.1.4.1.25623.1.0.124200)
+Version used: 2023-10-18T05:05:17Z
+","","","DFN-CERT-2023-2756,DFN-CERT-2023-1395,DFN-CERT-2023-0322,WID-SEC-2023-1022,WID-SEC-2023-1021,WID-SEC-2022-1702",""
+192.168.31.55,vuln-1.lan,3000,tcp,7.5,High,80,"VendorFix","Grafana Privilege Escalation Vulnerability (GHSA-jv32-5578-pxjc)","Grafana is prone to a privilege escalation vulnerability.","Installed version: 8.2.6
+Fixed version:     8.5.14
+Installation
+path / port:       /
+
+",1.3.6.1.4.1.25623.1.0.124199,"CVE-2022-31130",6bda9821-003a-41a9-88f2-f7a59ec30bb2,"vulnopen",2024-04-15T16:11:25Z,72b21bdd-7557-4a32-9795-4ec8c866f622,"The destination plugin could receive a Grafana authentication
+  token of the user.","Update to version 8.5.14, 9.1.8 or later.","Grafana version 7.x through 8.5.13, 9.x through 9.1.7.","","Checks if a vulnerable version is present on the target host.
+Details:
+Grafana Privilege Escalation Vulnerability (GHSA-jv32-5578-pxjc)
+(OID: 1.3.6.1.4.1.25623.1.0.124199)
+Version used: 2023-10-18T05:05:17Z
+","","","DFN-CERT-2023-2756,DFN-CERT-2023-1395,DFN-CERT-2023-0322,WID-SEC-2022-1702",""
+192.168.31.55,vuln-1.lan,3000,tcp,7.5,High,80,"VendorFix","Grafana OAuth Vulnerability (GHSA-mx47-6497-3fv2)","Grafana is prone to a vulnerability in OAuth.","Installed version: 8.2.6
+Fixed version:     8.3.10
+Installation
+path / port:       /
+
+",1.3.6.1.4.1.25623.1.0.148470,"CVE-2022-31107",6bda9821-003a-41a9-88f2-f7a59ec30bb2,"vulnopen",2024-04-15T16:11:25Z,6d395b27-272c-4f03-97d2-5eed508edc63,"It is possible for a malicious user who has authorization to log
+  into a Grafana instance via a configured OAuth IdP to take over an existing Grafana account under
+  some conditions.","Update to version 8.3.10, 8.4.10, 8.5.9, 9.0.3 or later.","Grafana version 5.3 through 8.3.9, 8.4.x through 8.4.9, 8.5.x
+  through 8.5.8 and 9.x through 9.0.2.","","Checks if a vulnerable version is present on the target host.
+Details:
+Grafana OAuth Vulnerability (GHSA-mx47-6497-3fv2)
+(OID: 1.3.6.1.4.1.25623.1.0.148470)
+Version used: 2023-10-18T05:05:17Z
+","","","DFN-CERT-2023-1430,DFN-CERT-2023-1395,DFN-CERT-2022-2825,DFN-CERT-2022-2397,DFN-CERT-2022-2395,DFN-CERT-2022-2394,DFN-CERT-2022-2350,DFN-CERT-2022-2163,DFN-CERT-2022-1656,WID-SEC-2022-1582,WID-SEC-2022-0696",""
+192.168.31.55,vuln-1.lan,3000,tcp,7.5,High,100,"VendorFix","Grafana 8.0.0-beta1 - 8.3.0 Directory Traversal Vulnerability - Active Check","Grafana is prone to a directory traversal vulnerability.","It was possible to read the file etc/passwd via the URL http://vuln-1.lan:3000/public/plugins/alertGroups/../../../../../../../../etc/passwd
+
+Result:
+
+root:x:0:0:root:/root:/bin/ash
+bin:x:1:1:bin:/bin:/sbin/nologin
+daemon:x:2:2:daemon:/sbin:/sbin/nologin
+adm:x:3:4:adm:/var/adm:/sbin/nologin
+lp:x:4:7:lp:/var/spool/lpd:/sbin/nologin
+sync:x:5:0:sync:/sbin:/bin/sync
+shutdown:x:6:0:shutdown:/sbin:/sbin/shutdown
+halt:x:7:0:halt:/sbin:/sbin/halt
+mail:x:8:12:mail:/var/mail:/sbin/nologin
+news:x:9:13:news:/usr/lib/news:/sbin/nologin
+uucp:x:10:14:uucp:/var/spool/uucppublic:/sbin/nologin
+operator:x:11:0:operator:/root:/sbin/nologin
+man:x:13:15:man:/usr/man:/sbin/nologin
+postmaster:x:14:12:postmaster:/var/mail:/sbin/nologin
+cron:x:16:16:cron:/var/spool/cron:/sbin/nologin
+ftp:x:21:21::/var/lib/ftp:/sbin/nologin
+sshd:x:22:22:sshd:/dev/null:/sbin/nologin
+at:x:25:25:at:/var/spool/cron/atjobs:/sbin/nologin
+squid:x:31:31:Squid:/var/cache/squid:/sbin/nologin
+xfs:x:33:33:X Font Server:/etc/X11/fs:/sbin/nologin
+games:x:35:35:games:/usr/games:/sbin/nologin
+cyrus:x:85:12::/usr/cyrus:/sbin/nologin
+vpopmail:x:89:89::/var/vpopmail:/sbin/nologin
+ntp:x:123:123:NTP:/var/empty:/sbin/nologin
+smmsp:x:209:209:smmsp:/var/spool/mqueue:/sbin/nologin
+guest:x:405:100:guest:/dev/null:/sbin/nologin
+nobody:x:65534:65534:nobody:/:/sbin/nologin
+grafana:x:472:0:Linux User,,,:/home/grafana:/sbin/nologin
+
+",1.3.6.1.4.1.25623.1.0.147264,"CVE-2021-43798",6bda9821-003a-41a9-88f2-f7a59ec30bb2,"vulnopen",2024-04-15T16:11:25Z,e184b6fa-3477-405d-b06b-e84b665fa9d4,"An unauthenticated attacker may read arbitrary files.","Update to version 8.0.7, 8.1.8, 8.2.7, 8.3.1 or later.","Grafana version 8.0.0-beta1 through 8.3.0.","Grafana is vulnerable to directory traversal, allowing access
+  to local files. The vulnerable URL path is: <grafana_host_url>/public/plugins/<'plugin-id'> where
+  <'plugin-id'> is the plugin ID for any installed plugin.
+
+  Every Grafana instance comes with pre-installed plugins like the Prometheus plugin or MySQL plugin
+  so multiple URLs are vulnerable for every instance.","Sends a crafted HTTP GET request and checks the response.
+Details:
+Grafana 8.0.0-beta1 - 8.3.0 Directory Traversal Vulnerability - Active Check
+(OID: 1.3.6.1.4.1.25623.1.0.147264)
+Version used: 2021-12-13T03:03:27Z
+","","","DFN-CERT-2024-0423,DFN-CERT-2022-2825,DFN-CERT-2022-2350,DFN-CERT-2022-1386,DFN-CERT-2022-0922,WID-SEC-2022-0404,CB-K21/1257",""
+192.168.31.55,vuln-1.lan,3000,tcp,7.5,High,80,"VendorFix","Grafana 8.0.0-beta1 - 8.3.0 Directory Traversal Vulnerability - Version Check","Grafana is prone to a directory traversal vulnerability.","Installed version: 8.2.6
+Fixed version:     8.2.7
+Installation
+path / port:       /
+
+",1.3.6.1.4.1.25623.1.0.147272,"CVE-2021-43798",6bda9821-003a-41a9-88f2-f7a59ec30bb2,"vulnopen",2024-04-15T16:11:25Z,b98b7ce8-020a-44a6-8843-8f29785cef46,"An unauthenticated attacker may read arbitrary files.","Update to version 8.0.7, 8.1.8, 8.2.7, 8.3.1 or later.","Grafana version 8.0.0-beta1 through 8.3.0.","Grafana is vulnerable to directory traversal, allowing access
+  to local files. The vulnerable URL path is: <grafana_host_url>/public/plugins/<'plugin-id'> where
+  <'plugin-id'> is the plugin ID for any installed plugin.
+
+  Every Grafana instance comes with pre-installed plugins like the Prometheus plugin or MySQL plugin
+  so multiple URLs are vulnerable for every instance.","Checks if a vulnerable version is present on the target host.
+Details:
+Grafana 8.0.0-beta1 - 8.3.0 Directory Traversal Vulnerability - Version Check
+(OID: 1.3.6.1.4.1.25623.1.0.147272)
+Version used: 2021-12-13T03:03:27Z
+","","","DFN-CERT-2024-0423,DFN-CERT-2022-2825,DFN-CERT-2022-2350,DFN-CERT-2022-1386,DFN-CERT-2022-0922,WID-SEC-2022-0404,CB-K21/1257",""
+192.168.31.55,vuln-1.lan,8161,tcp,7.5,High,95,"Mitigation","HTTP Brute Force Logins With Default Credentials Reporting","It was possible to login into the remote Web Application using
+  default credentials.","It was possible to login with the following credentials (<URL>:<User>:<Password>:<HTTP status code>)
+
+http://vuln-1.lan:8161/admin/:admin:admin:HTTP/1.1 200 OK
+http://vuln-1.lan:8161/admin/:user:user:HTTP/1.1 200 OK
+http://vuln-1.lan:8161/admin/SecureDocumentLibrary:admin:admin:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/admin/SecureDocumentLibrary:user:user:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/admin/SecureDocumentLibrary/DocumentLibraryManager:admin:admin:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/admin/SecureDocumentLibrary/DocumentLibraryManager:user:user:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/admin/airflow:admin:admin:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/admin/airflow:user:user:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/admin/airflow/login:admin:admin:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/admin/airflow/login:user:user:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/admin/ckeditor:admin:admin:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/admin/ckeditor:user:user:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/admin/ckeditor/plugins:admin:admin:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/admin/ckeditor/plugins:user:user:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/admin/ckeditor/plugins/ajaxplorer:admin:admin:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/admin/ckeditor/plugins/ajaxplorer:user:user:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/admin/ckeditor/plugins/ajaxplorer/phpunit:admin:admin:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/admin/ckeditor/plugins/ajaxplorer/phpunit:user:user:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/admin/ckeditor/plugins/ajaxplorer/phpunit/src:admin:admin:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/admin/ckeditor/plugins/ajaxplorer/phpunit/src:user:user:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/admin/ckeditor/plugins/ajaxplorer/phpunit/src/Util:admin:admin:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/admin/ckeditor/plugins/ajaxplorer/phpunit/src/Util:user:user:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/admin/ckeditor/plugins/ajaxplorer/phpunit/src/Util/PHP:admin:admin:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/admin/ckeditor/plugins/ajaxplorer/phpunit/src/Util/PHP:user:user:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/admin/configurationview:admin:admin:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/admin/configurationview:user:user:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/admin/fckeditor:admin:admin:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/admin/fckeditor:user:user:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/admin/helpfiles:admin:admin:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/admin/helpfiles:user:user:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/admin/htmleditor:admin:admin:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/admin/htmleditor:user:user:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/admin/index.jsp:admin:admin:HTTP/1.1 200 OK
+http://vuln-1.lan:8161/admin/index.jsp:user:user:HTTP/1.1 200 OK
+http://vuln-1.lan:8161/admin/lib:admin:admin:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/admin/lib:user:user:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/admin/lib/gradient:admin:admin:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/admin/lib/gradient:user:user:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/admin/login:admin:admin:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/admin/login:user:user:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/admin/public:admin:admin:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/admin/public:user:user:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/admin/vendor:admin:admin:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/admin/vendor:user:user:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/admin/vendor/phpunit:admin:admin:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/admin/vendor/phpunit:user:user:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/admin/vendor/phpunit/phpunit:admin:admin:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/admin/vendor/phpunit/phpunit:user:user:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/admin/vendor/phpunit/phpunit/src:admin:admin:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/admin/vendor/phpunit/phpunit/src:user:user:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/admin/vendor/phpunit/phpunit/src/Util:admin:admin:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/admin/vendor/phpunit/phpunit/src/Util:user:user:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/admin/vendor/phpunit/phpunit/src/Util/PHP:admin:admin:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/admin/vendor/phpunit/phpunit/src/Util/PHP:user:user:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/api/:admin:admin:HTTP/1.1 200 OK
+http://vuln-1.lan:8161/api/:user:user:HTTP/1.1 200 OK
+http://vuln-1.lan:8161/api/1:admin:admin:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/api/1:user:user:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/api/2:admin:admin:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/api/2:user:user:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/api/2.1:admin:admin:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/api/2.1:user:user:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/api/2.1/rest:admin:admin:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/api/2.1/rest:user:user:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/api/config:admin:admin:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/api/config:user:user:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/api/config/class:admin:admin:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/api/config/class:user:user:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/api/explorer:admin:admin:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/api/explorer:user:user:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/api/hassio:admin:admin:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/api/hassio:user:user:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/api/hassio/app:admin:admin:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/api/hassio/app:user:user:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/api/hassio_ingress:admin:admin:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/api/hassio_ingress:user:user:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/api/json:admin:admin:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/api/json:user:user:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/api/json/nfausers:admin:admin:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/api/json/nfausers:user:user:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/api/jsonws:admin:admin:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/api/jsonws:user:user:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/api/ldap:admin:admin:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/api/ldap:user:user:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/api/ldap/config:admin:admin:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/api/ldap/config:user:user:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/api/ldap/config/ldapTreeNodeChildren:admin:admin:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/api/ldap/config/ldapTreeNodeChildren:user:user:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/api/platform:admin:admin:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/api/platform:user:user:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/api/repos:admin:admin:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/api/repos:user:user:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/api/repos/dashboards:admin:admin:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/api/repos/dashboards:user:user:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/api/system:admin:admin:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/api/system:user:user:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/api/userrolelist:admin:admin:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/api/userrolelist:user:user:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/api/v1:admin:admin:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/api/v1:user:user:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/api/v1.0:admin:admin:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/api/v1.0:user:user:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/api/v1/authentication:admin:admin:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/api/v1/authentication:user:user:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/api/v1/authentication/connection-token:admin:admin:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/api/v1/authentication/connection-token:user:user:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/api/v1/folders:admin:admin:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/api/v1/folders:user:user:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/api/v1/status:admin:admin:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/api/v1/status:user:user:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/api/v1/terminal:admin:admin:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/api/v1/terminal:user:user:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/api/v1/terminal/sessions:admin:admin:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/api/v1/terminal/sessions:user:user:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/api/v1/users:admin:admin:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/api/v1/users:user:user:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/api/v1/users/connection-token:admin:admin:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/api/v1/users/connection-token:user:user:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/api/v2:admin:admin:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/api/v2:user:user:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/api/v2.0:admin:admin:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/api/v2.0:user:user:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/api/v3:admin:admin:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/api/v3:user:user:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/api/v3.0:admin:admin:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/api/v3.0:user:user:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/api/v4:admin:admin:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/api/v4:user:user:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/api/v4.0:admin:admin:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/api/v4.0:user:user:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/api/v4/teams:admin:admin:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/api/v4/teams:user:user:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/api/v4/users:admin:admin:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/api/v4/users:user:user:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/api/v4/users/me:admin:admin:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/api/v4/users/me:user:user:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/api/v4/users/me/teams:admin:admin:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/api/v4/users/me/teams:user:user:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/api/v5:admin:admin:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/api/v5:user:user:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/api/v5.0:admin:admin:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/api/v5.0:user:user:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/api/vendor:admin:admin:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/api/vendor:user:user:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/api/vendor/phpunit:admin:admin:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/api/vendor/phpunit:user:user:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/api/vendor/phpunit/phpunit:admin:admin:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/api/vendor/phpunit/phpunit:user:user:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/api/vendor/phpunit/phpunit/src:admin:admin:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/api/vendor/phpunit/phpunit/src:user:user:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/api/vendor/phpunit/phpunit/src/Util:admin:admin:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/api/vendor/phpunit/phpunit/src/Util:user:user:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/api/vendor/phpunit/phpunit/src/Util/PHP:admin:admin:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/api/vendor/phpunit/phpunit/src/Util/PHP:user:user:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/api/vppv2:admin:admin:HTTP/1.1 404 Not Found
+http://vuln-1.lan:8161/api/vppv2:user:user:HTTP/1.1 404 Not Found
+
+",1.3.6.1.4.1.25623.1.0.103240,"CVE-1999-0501,CVE-1999-0502,CVE-1999-0507,CVE-1999-0508",6bda9821-003a-41a9-88f2-f7a59ec30bb2,"vulnopen",2024-04-15T16:11:25Z,44a3e43c-9350-4244-ab03-b83ddac2fc3e,"This issue may be exploited by a remote attacker to e.g. gain
+  access to sensitive information or modify system configuration.","Change the password as soon as possible.","","As the VT 'HTTP Brute Force Logins With Default Credentials'
+  (OID: 1.3.6.1.4.1.25623.1.0.108041) might run into a timeout the actual reporting of this
+  vulnerability takes place in this VT instead.","Reports default credentials detected by the VT
+  'HTTP Brute Force Logins With Default Credentials' (OID: 1.3.6.1.4.1.25623.1.0.108041).
+Details:
+HTTP Brute Force Logins With Default Credentials Reporting
+(OID: 1.3.6.1.4.1.25623.1.0.103240)
+Version used: 2022-08-04T13:37:02Z
+","","","",""
+192.168.31.55,vuln-1.lan,3000,tcp,7.5,High,80,"VendorFix","Grafana Privilege Escalation Vulnerability (GHSA-x744-mm8v-vpgr)","Grafana is prone to a privilege escalation vulnerability.","Installed version: 8.2.6
+Fixed version:     8.5.14
+Installation
+path / port:       /
+
+",1.3.6.1.4.1.25623.1.0.124198,"CVE-2022-39201",6bda9821-003a-41a9-88f2-f7a59ec30bb2,"vulnopen",2024-04-15T16:11:25Z,28cdb68a-eae8-4b3b-9339-0122ce71fcf2,"The destination plugin could receive a Grafana authentication
+  cookie of the user.","Update to version 8.5.14, 9.1.8 or later.","Grafana version 5.0.0-beta1 through 8.5.13, 9.x through 9.1.7.","","Checks if a vulnerable version is present on the target host.
+Details:
+Grafana Privilege Escalation Vulnerability (GHSA-x744-mm8v-vpgr)
+(OID: 1.3.6.1.4.1.25623.1.0.124198)
+Version used: 2023-10-18T05:05:17Z
+","","","DFN-CERT-2023-2756,DFN-CERT-2023-1395,DFN-CERT-2023-0322,WID-SEC-2022-1702",""
+192.168.31.55,vuln-1.lan,3000,tcp,7.5,High,80,"VendorFix","Grafana 7.3.0-beta1 < 8.5.24, 9.x < 9.2.17, 9.3.x < 9.3.13, 9.4.x < 9.4.9 DoS Vulnerability","Grafana is prone to a denial of service (DoS) vulnerability in
+  the crewjam/saml library used for SAML integration.","Installed version: 8.2.6
+Fixed version:     8.5.24
+Installation
+path / port:       /
+
+",1.3.6.1.4.1.25623.1.0.104715,"CVE-2023-28119",6bda9821-003a-41a9-88f2-f7a59ec30bb2,"vulnopen",2024-04-15T16:11:25Z,4da3937c-f527-484f-8059-7566897120bc,"The use of flate.NewReader in crewjam/saml does not limit the
+  size of the input. The user could pass more than 1 MB of data in the HTTP request to the
+  processing functions, which will be decompressed server-side using the Deflate algorithm.
+  Therefore, after repeating the same request multiple times, it is possible to achieve a reliable
+  crash since the operating system kills the process.
+
+  In Grafana Enterprise, SAML single logout is using the aforementioned functions. Therefore, it's
+  impacted by the vulnerability.","'- Update to version 8.5.24, 9.2.17, 9.3.13, 9.4.9 or later.
+
+  - As an alternative mitigation, disabling single logout in SAML or not using the SAML
+  authentication entirely would mitigate the vulnerability.","Grafana versions starting from 7.3.0-beta1 and prior to 8.5.24,
+  9.x prior to 9.2.17, 9.3.x prior to 9.3.13 and 9.4.x prior to 9.4.9.","Grafana is using crewjam/saml library for SAML integration. On
+  March 23, an advisory and relevant fix was published in the upstream library, which described a
+  vulnerability allowing denial of service attack.","Checks if a vulnerable version is present on the target host.
+Details:
+Grafana 7.3.0-beta1 < 8.5.24, 9.x < 9.2.17, 9.3.x < 9.3.13, 9.4.x < 9.4.9 Do...
+(OID: 1.3.6.1.4.1.25623.1.0.104715)
+Version used: 2023-10-13T05:06:10Z
+","","","WID-SEC-2023-1088",""
+192.168.31.55,vuln-1.lan,3000,tcp,6.6,Medium,80,"VendorFix","Grafana Privilege Escalation Vulnerability (GHSA-ff5c-938w-8c9q)","Grafana is prone to a privilege escalation vulnerability.","Installed version: 8.2.6
+Fixed version:     8.5.13
+Installation
+path / port:       /
+
+",1.3.6.1.4.1.25623.1.0.148743,"CVE-2022-35957",6bda9821-003a-41a9-88f2-f7a59ec30bb2,"vulnopen",2024-04-15T16:11:25Z,dc2ada3e-d32d-466c-be67-6608a1ccc823,"","Update to version 8.5.13, 9.0.9, 9.1.6 or later.","Grafana prior to version 8.5.13, version 9.0.x through 9.0.8
+  and 9.1.x through 9.1.5 if the Auth Proxy is used.","Grafana allows an escalation from Admin privileges to Server
+  Admin when Auth proxy authentication is used.
+
+  Auth proxy allows to authenticate a user by only providing the username (or email) in a
+  X-WEBAUTH-USER HTTP header: the trust assumption is that a front proxy will take care of
+  authentication and that Grafana server is publicly reachable only with this front proxy.
+
+  Datasource proxy breaks this assumption:
+
+  - it is possible to configure a fake datasource pointing to a localhost Grafana install with a
+  X-WEBAUTH-USER HTTP header containing admin username.
+
+  - This fake datasource can be called publicly via this proxying feature.","Checks if a vulnerable version is present on the target host.
+Details:
+Grafana Privilege Escalation Vulnerability (GHSA-ff5c-938w-8c9q)
+(OID: 1.3.6.1.4.1.25623.1.0.148743)
+Version used: 2023-10-18T05:05:17Z
+","","","DFN-CERT-2023-1430,DFN-CERT-2023-1395,DFN-CERT-2023-1045,DFN-CERT-2022-2825,DFN-CERT-2022-2350,WID-SEC-2022-1486",""
+192.168.31.206,vuln-1.lan,9200,tcp,6.5,Medium,80,"VendorFix","Elastic Elasticsearch DoS Vulnerability (ESA-2021-15)","Elasticsearch is prone to a denial of service (DoS) vulnerability.","Installed version: 1.4.2
+Fixed version:     6.8.17
+Installation
+path / port:       /
+
+",1.3.6.1.4.1.25623.1.0.146386,"CVE-2021-22144",6bda9821-003a-41a9-88f2-f7a59ec30bb2,"vulnopen",2024-04-15T16:11:25Z,766c5bfc-9ceb-45dd-9b76-2c2584a7b470,"","Update to version 6.8.17, 7.13.3 or later.","Elasticsearch prior to version 6.8.17 and 7.x prior to 7.13.3.","An uncontrolled recursion vulnerability that could lead to a
+  denial of service attack was identified in the Elasticsearch Grok parser. A user with the ability
+  to submit arbitrary queries to Elasticsearch could create a malicious Grok query that will crash
+  the Elasticsearch node.","Checks if a vulnerable version is present on the target host.
+Details:
+Elastic Elasticsearch DoS Vulnerability (ESA-2021-15)
+(OID: 1.3.6.1.4.1.25623.1.0.146386)
+Version used: 2021-08-17T12:00:57Z
+","","","DFN-CERT-2022-2315,WID-SEC-2022-1777",""
+192.168.31.55,vuln-1.lan,3000,tcp,6.4,Medium,80,"VendorFix","Grafana < 8.5.26, 9.x < 9.2.19, 9.3.x < 9.3.15, 9.4.x < 9.4.12, 9.5.0 < 9.5.3 Access Control Vulnerability","Grafana is prone to an access control vulnerability in the
+  alert manager.","Installed version: 8.2.6
+Fixed version:     8.5.26
+Installation
+path / port:       /
+
+",1.3.6.1.4.1.25623.1.0.149749,"CVE-2023-2183",6bda9821-003a-41a9-88f2-f7a59ec30bb2,"vulnopen",2024-04-15T16:11:25Z,a1c5adc9-620d-4b71-835c-0598c9b0f960,"","Update to version 8.5.26, 9.2.19, 9.3.15, 9.4.12, 9.5.3 or
+  later.","Grafana prior to version 8.5.26, version 9.x through 9.2.18,
+  9.3.x through 9.3.14, 9.4.x through 9.4.11 and version 9.5.x through 9.5.2.","The option to send a test alert is not available from the user
+  panel UI for users having the Viewer role. It is still possible for a user with the Viewer role
+  to send a test alert using the API as the API does not check access to this function. This might
+  enable malicious users to abuse the functionality by sending multiple alert messages to e-mail
+  and Slack, spamming users, prepare phishing attack or block SMTP server.","Checks if a vulnerable version is present on the target host.
+Details:
+Grafana < 8.5.26, 9.x < 9.2.19, 9.3.x < 9.3.15, 9.4.x < 9.4.12, 9.5.0 < 9.5....
+(OID: 1.3.6.1.4.1.25623.1.0.149749)
+Version used: 2023-10-13T05:06:10Z
+","","","DFN-CERT-2023-3124,DFN-CERT-2023-1676,WID-SEC-2023-1384",""
+192.168.31.55,vuln-1.lan,8500,tcp,6.1,Medium,80,"VendorFix","Adobe ColdFusion Security Update (APSB16-22)","Adobe ColdFusion is prone to a reflected cross site scripting vulnerability.","Installed version: 11.0.03.292866
+Fixed version:     11.0.09.299201
+Installation
+path / port:       /
+
+",1.3.6.1.4.1.25623.1.0.808165,"CVE-2016-4159",6bda9821-003a-41a9-88f2-f7a59ec30bb2,"vulnopen",2024-04-15T16:11:25Z,f74e15d0-e8aa-4567-9fca-dd207aa1f436,"Successful exploitation will allow remote
+  attackers to conduct cross-site scripting attacks.","Upgrade to version 10 Update 20 or
+  11 Update 9 or later.","ColdFusion 10 before Update 20 and
+  11 before Update 9.","The flaw is due to an improper input
+  validation issue that could be used in reflected cross-site scripting
+  attacks.","Checks if a vulnerable version is present on the target host.
+Details:
+Adobe ColdFusion Security Update (APSB16-22)
+(OID: 1.3.6.1.4.1.25623.1.0.808165)
+Version used: 2023-07-20T05:05:17Z
+","","","DFN-CERT-2016-0966,CB-K16/0902",""
+192.168.31.55,vuln-1.lan,3000,tcp,5.4,Medium,80,"VendorFix","Grafana XSS Vulnerability (GHSA-xc3p-28hw-q24g)","Grafana is prone to a cross-site scripting (XSS) vulnerability.","Installed version: 8.2.6
+Fixed version:     8.3.5
+Installation
+path / port:       /
+
+",1.3.6.1.4.1.25623.1.0.147615,"CVE-2022-21702",6bda9821-003a-41a9-88f2-f7a59ec30bb2,"vulnopen",2024-04-15T16:11:25Z,7320e0a5-330f-4456-8f3e-719c02f24859,"An attacker could serve HTML content through the Grafana
+  datasource or plugin proxy and trick a user to visit this HTML page using a specially crafted
+  link and execute an XSS attack. The attacker could either compromise an existing datasource for a
+  specific Grafana instance or either set up its own public service and instruct anyone to set it
+  up in their Grafana instance.","Update to version 7.5.15, 8.3.5 or later.","Grafana version 2.0.0-beta1 through 8.3.4.","","Checks if a vulnerable version is present on the target host.
+Details:
+Grafana XSS Vulnerability (GHSA-xc3p-28hw-q24g)
+(OID: 1.3.6.1.4.1.25623.1.0.147615)
+Version used: 2022-02-16T03:03:58Z
+","","","DFN-CERT-2022-2496,DFN-CERT-2022-2397,DFN-CERT-2022-2350,DFN-CERT-2022-1386,DFN-CERT-2022-0922,DFN-CERT-2022-0794,WID-SEC-2024-0794,WID-SEC-2022-0407,CB-K22/0159",""
+192.168.31.55,vuln-1.lan,3000,tcp,5.4,Medium,80,"VendorFix","Grafana 8.1.0 < 9.2.10, 9.3.0 < 9.3.4 XSS Vulnerability (GHSA-8xmm-x63g-f6xv)","Grafana is prone to a stored cross-site scripting (XSS)
+  vulnerability in the ResourcePicker component.","Installed version: 8.2.6
+Fixed version:     9.2.10
+Installation
+path / port:       /
+
+",1.3.6.1.4.1.25623.1.0.149214,"CVE-2022-23552",6bda9821-003a-41a9-88f2-f7a59ec30bb2,"vulnopen",2024-04-15T16:11:25Z,8397bf4d-e852-4015-8ffb-1438d5f9de53,"An attacker needs to have the Editor role in order to change a
+  panel to include either an external URL to a SVG-file containing JavaScript, or use the data:
+  scheme to load an inline SVG-file containing JavaScript. This means that vertical privilege
+  escalation is possible, where a user with Editor role can change to a known password for a user
+  having Admin role if the user with Admin role executes malicious JavaScript viewing a dashboard.","Update to version 9.2.10, 9.3.4 or later.","Grafana version 8.1.0 through 9.2.9 and version 9.3.0 through
+  9.3.3.","A stored XSS vulnerability is possible due to SVG-files aren't
+  properly sanitized and allow arbitrary JavaScript to be executed in the context of the currently
+  authorized user of the Grafana instance.","Checks if a vulnerable version is present on the target host.
+Details:
+Grafana 8.1.0 < 9.2.10, 9.3.0 < 9.3.4 XSS Vulnerability (GHSA-8xmm-x63g-f6xv)
+(OID: 1.3.6.1.4.1.25623.1.0.149214)
+Version used: 2023-10-13T05:06:10Z
+","","","DFN-CERT-2023-2756,DFN-CERT-2023-0622,WID-SEC-2023-0202",""
+192.168.31.55,vuln-1.lan,3000,tcp,5.4,Medium,80,"VendorFix","Grafana < 8.5.21, 9.2.x < 9.2.13, 9.3.x < 9.3.8 Multiple Vulnerabilities","Grafana is prone to multiple vulnerabilities.","Installed version: 8.2.6
+Fixed version:     8.5.21
+Installation
+path / port:       /
+
+",1.3.6.1.4.1.25623.1.0.149399,"CVE-2023-0507,CVE-2023-0594",6bda9821-003a-41a9-88f2-f7a59ec30bb2,"vulnopen",2024-04-15T16:11:25Z,dd379f76-e572-4b4f-b5cb-4565e446422d,"","Update to version 8.5.21, 9.2.13, 9.3.8 or later.","Grafana prior to version 8.5.21, version 9.2.0 through 9.2.12
+  and 9.3.0 through 9.3.7.","The following vulnerabilities exist:
+
+  - CVE-2023-0507: Stored XSS in geomap panel plugin via attribution
+
+  - CVE-2023-0594: Stored XSS in TraceView panel","Checks if a vulnerable version is present on the target host.
+Details:
+Grafana < 8.5.21, 9.2.x < 9.2.13, 9.3.x < 9.3.8 Multiple Vulnerabilities
+(OID: 1.3.6.1.4.1.25623.1.0.149399)
+Version used: 2023-10-13T05:06:10Z
+","","","DFN-CERT-2024-0349,DFN-CERT-2023-0901,WID-SEC-2023-0528",""
+192.168.31.206,vuln-1.lan,9200,tcp,5.3,Medium,80,"VendorFix","Elastic Elasticsearch Multiple Vulnerabilities (ESA-2021-06, ESA-2021-08)","Elasticsearch is prone to multiple vulnerabilities.","Installed version: 1.4.2
+Fixed version:     6.8.15
+Installation
+path / port:       /
+
+",1.3.6.1.4.1.25623.1.0.145940,"CVE-2021-22135,CVE-2021-22137",6bda9821-003a-41a9-88f2-f7a59ec30bb2,"vulnopen",2024-04-15T16:11:25Z,1bc49e9c-cc40-40cb-9ae9-8d9e29639430,"This could lead to disclosing the existence of documents and
+  fields the attacker should not be able to view or result in an attacker gaining additional insight
+  into potentially sensitive indices.","Update to version 6.8.15, 7.12.0 or later.","Elasticsearch versions prior to versions 6.8.15 or 7.12.0.","The following vulnerabilities exist:
+
+  - CVE-2021-22135: Suggester & Profile API information disclosure flaw
+
+  - CVE-2021-22137: Field disclosure flaw","Checks if a vulnerable version is present on the target host.
+Details:
+Elastic Elasticsearch Multiple Vulnerabilities (ESA-2021-06, ESA-2021-08)
+(OID: 1.3.6.1.4.1.25623.1.0.145940)
+Version used: 2021-08-17T12:00:57Z
+","","","WID-SEC-2022-0720",""
+192.168.31.55,vuln-1.lan,3000,tcp,5.3,Medium,80,"VendorFix","Grafana < 9.4.12, 9.5.0 < 9.5.3 DoS Vulnerability","Grafana is prone to a denial of service (DoS) vulnerability.","Installed version: 8.2.6
+Fixed version:     9.4.12
+Installation
+path / port:       /
+
+",1.3.6.1.4.1.25623.1.0.149748,"CVE-2023-2801",6bda9821-003a-41a9-88f2-f7a59ec30bb2,"vulnopen",2024-04-15T16:11:25Z,5166ccc3-c958-44b4-ae30-6b7ab61be241,"","Update to version 9.4.12, 9.5.3 or later.","Grafana prior to version 9.4.12 and version 9.5.x through
+  9.5.2.","Using public dashboards users can query multiple distinct data
+  sources using mixed queries. However such query has a possibility of crashing a Grafana instance.
+  The only feature that uses mixed queries at the moment is public dashboards, but it's also
+  possible to cause this by calling the query API directly. This might enable malicious users to
+  crash Grafana instances through that endpoint.","Checks if a vulnerable version is present on the target host.
+Details:
+Grafana < 9.4.12, 9.5.0 < 9.5.3 DoS Vulnerability
+(OID: 1.3.6.1.4.1.25623.1.0.149748)
+Version used: 2023-10-13T05:06:10Z
+","","","DFN-CERT-2023-3124,DFN-CERT-2023-1676,WID-SEC-2023-1384",""
+192.168.31.206,vuln-1.lan,8000,tcp,5.0,Medium,70,"VendorFix","SSL/TLS: Renegotiation DoS Vulnerability (CVE-2011-1473, CVE-2011-5094)","The remote SSL/TLS service is prone to a denial of service (DoS)
+  vulnerability.","The following indicates that the remote SSL/TLS service is affected:
+
+Protocol Version | Successful re-done SSL/TLS handshakes (Renegotiation) over an existing / already established SSL/TLS connection
+----------------------------------------------------------------------------------------------------------------------------------
+TLSv1.2          | 10
+",1.3.6.1.4.1.25623.1.0.117761,"CVE-2011-1473,CVE-2011-5094",6bda9821-003a-41a9-88f2-f7a59ec30bb2,"vulnopen",2024-04-15T16:11:25Z,9c52412a-7c88-40c2-88b8-1e942a7588c0,"The flaw might make it easier for remote attackers to cause a
+  DoS (CPU consumption) by performing many renegotiations within a single connection.","Users should contact their vendors for specific patch information.
+
+  A general solution is to remove/disable renegotiation capabilities altogether from/in the affected
+  SSL/TLS service.","Every SSL/TLS service which does not properly restrict
+  client-initiated renegotiation.","The flaw exists because the remote SSL/TLS service does not
+  properly restrict client-initiated renegotiation within the SSL and TLS protocols.
+
+  Note: The referenced CVEs are affecting OpenSSL and Mozilla Network Security Services (NSS) but
+  both are in a DISPUTED state with the following rationale:
+
+  > It can also be argued that it is the responsibility of server deployments, not a security
+  library, to prevent or limit renegotiation when it is inappropriate within a specific environment.
+
+  Both CVEs are still kept in this VT as a reference to the origin of this flaw.","Checks if the remote service allows to re-do the same SSL/TLS
+  handshake (Renegotiation) over an existing / already established SSL/TLS connection.
+Details:
+SSL/TLS: Renegotiation DoS Vulnerability (CVE-2011-1473, CVE-2011-5094)
+(OID: 1.3.6.1.4.1.25623.1.0.117761)
+Version used: 2024-02-02T05:06:11Z
+","","","DFN-CERT-2017-1013,DFN-CERT-2017-1012,DFN-CERT-2014-0809,DFN-CERT-2013-1928,DFN-CERT-2012-1112,WID-SEC-2024-0796,WID-SEC-2023-1435,CB-K17/0980,CB-K17/0979,CB-K14/0772,CB-K13/0915,CB-K13/0462",""
+192.168.31.206,vuln-1.lan,8000,tcp,5.0,Medium,99,"Mitigation","SSL/TLS: Known Untrusted / Dangerous Certificate Authority (CA) Detection","The service is using an SSL/TLS certificate from a known
+  untrusted and/or dangerous certificate authority (CA).","The certificate of the remote service is signed by the following untrusted and/or dangerous CA:
+
+Issuer: CN=localhost,O=SaltStack,L=Salt Lake City,ST=Utah,C=US
+
+Certificate details:
+fingerprint (SHA-1)             | 9B793F70CB87AD18308C3EE6881CEB381E9889B2
+fingerprint (SHA-256)           | 7850D65F8EBE412E0E61EFA4AA1745A84664A6BA302C0DEB0EBCCA24BFDF6620
+issued by                       | CN=localhost,O=SaltStack,L=Salt Lake City,ST=Utah,C=US
+public key algorithm            | RSA
+public key size (bits)          | 2048
+serial                          | 302E343734373932313538383534343438375FEB49A9A898
+signature algorithm             | sha256WithRSAEncryption
+subject                         | CN=localhost,O=SaltStack,L=Salt Lake City,ST=Utah,C=US
+subject alternative names (SAN) | None
+valid from                      | 2020-05-03 22:21:27 UTC
+valid until                     | 2021-05-03 22:21:27 UTC
+",1.3.6.1.4.1.25623.1.0.113054,"",6bda9821-003a-41a9-88f2-f7a59ec30bb2,"vulnopen",2024-04-15T16:11:25Z,5f42d5d4-cae7-47a5-bbce-f1849f35a551,"An attacker could use this for man-in-the-middle (MITM) attacks,
+  accessing sensible data and other attacks.","Replace the SSL/TLS certificate with one signed by a trusted
+  CA.","","","The script reads the certificate used by the target host and
+  checks if it was signed by a known untrusted and/or dangerous CA.
+Details:
+SSL/TLS: Known Untrusted / Dangerous Certificate Authority (CA) Detection
+(OID: 1.3.6.1.4.1.25623.1.0.113054)
+Version used: 2021-11-22T15:32:39Z
+","","","",""
+192.168.31.206,vuln-1.lan,8000,tcp,5.0,Medium,99,"Mitigation","SSL/TLS: Certificate Expired","The remote server's SSL/TLS certificate has already expired.","The certificate of the remote service expired on 2021-05-03 22:21:27.
+
+Certificate details:
+fingerprint (SHA-1)             | 9B793F70CB87AD18308C3EE6881CEB381E9889B2
+fingerprint (SHA-256)           | 7850D65F8EBE412E0E61EFA4AA1745A84664A6BA302C0DEB0EBCCA24BFDF6620
+issued by                       | CN=localhost,O=SaltStack,L=Salt Lake City,ST=Utah,C=US
+public key algorithm            | RSA
+public key size (bits)          | 2048
+serial                          | 302E343734373932313538383534343438375FEB49A9A898
+signature algorithm             | sha256WithRSAEncryption
+subject                         | CN=localhost,O=SaltStack,L=Salt Lake City,ST=Utah,C=US
+subject alternative names (SAN) | None
+valid from                      | 2020-05-03 22:21:27 UTC
+valid until                     | 2021-05-03 22:21:27 UTC
+",1.3.6.1.4.1.25623.1.0.103955,"",6bda9821-003a-41a9-88f2-f7a59ec30bb2,"vulnopen",2024-04-15T16:11:25Z,ef2befb1-0c06-41b8-b187-6d11c90bfb94,"","Replace the SSL/TLS certificate by a new one.","","This script checks expiry dates of certificates associated with
+  SSL/TLS-enabled services on the target and reports whether any have already expired.","
+Details:
+SSL/TLS: Certificate Expired
+(OID: 1.3.6.1.4.1.25623.1.0.103955)
+Version used: 2021-11-22T15:32:39Z
+","","","",""
+192.168.31.55,vuln-1.lan,2379,tcp,5.0,Medium,100,"Workaround","etcd Information Disclosure Vulnerability - Active Check","etcd is prone to an information disclosure vulnerability if no
+  authentication is enabled. An attacker may read all stored key values which might contain
+  sensitive information like passwords.","Vulnerable URL: http://vuln-1.lan:2379/v2/keys/?recursive=true
+",1.3.6.1.4.1.25623.1.0.140888,"",6bda9821-003a-41a9-88f2-f7a59ec30bb2,"vulnopen",2024-04-15T16:11:25Z,48b70bf9-8bdc-4afb-a0d6-7aaed4fc2769,"An unauthenticated attacker may gather sensitive information
+  which could lead to further attacks.","Enable authentication as referenced in the advisory.","","","Sends a crafted HTTP GET request and checks the response.
+Details:
+etcd Information Disclosure Vulnerability - Active Check
+(OID: 1.3.6.1.4.1.25623.1.0.140888)
+Version used: 2023-05-18T09:08:59Z
+","","","",""
+192.168.31.206,vuln-1.lan,3306,tcp,5.0,Medium,70,"VendorFix","SSL/TLS: Renegotiation DoS Vulnerability (CVE-2011-1473, CVE-2011-5094)","The remote SSL/TLS service is prone to a denial of service (DoS)
+  vulnerability.","The following indicates that the remote SSL/TLS service is affected:
+
+Protocol Version | Successful re-done SSL/TLS handshakes (Renegotiation) over an existing / already established SSL/TLS connection
+----------------------------------------------------------------------------------------------------------------------------------
+TLSv1.0          | 10
+TLSv1.1          | 10
+TLSv1.2          | 10
+",1.3.6.1.4.1.25623.1.0.117761,"CVE-2011-1473,CVE-2011-5094",6bda9821-003a-41a9-88f2-f7a59ec30bb2,"vulnopen",2024-04-15T16:11:25Z,0ededd0f-090a-417a-bc4c-8fd50c78e9ec,"The flaw might make it easier for remote attackers to cause a
+  DoS (CPU consumption) by performing many renegotiations within a single connection.","Users should contact their vendors for specific patch information.
+
+  A general solution is to remove/disable renegotiation capabilities altogether from/in the affected
+  SSL/TLS service.","Every SSL/TLS service which does not properly restrict
+  client-initiated renegotiation.","The flaw exists because the remote SSL/TLS service does not
+  properly restrict client-initiated renegotiation within the SSL and TLS protocols.
+
+  Note: The referenced CVEs are affecting OpenSSL and Mozilla Network Security Services (NSS) but
+  both are in a DISPUTED state with the following rationale:
+
+  > It can also be argued that it is the responsibility of server deployments, not a security
+  library, to prevent or limit renegotiation when it is inappropriate within a specific environment.
+
+  Both CVEs are still kept in this VT as a reference to the origin of this flaw.","Checks if the remote service allows to re-do the same SSL/TLS
+  handshake (Renegotiation) over an existing / already established SSL/TLS connection.
+Details:
+SSL/TLS: Renegotiation DoS Vulnerability (CVE-2011-1473, CVE-2011-5094)
+(OID: 1.3.6.1.4.1.25623.1.0.117761)
+Version used: 2024-02-02T05:06:11Z
+","","","DFN-CERT-2017-1013,DFN-CERT-2017-1012,DFN-CERT-2014-0809,DFN-CERT-2013-1928,DFN-CERT-2012-1112,WID-SEC-2024-0796,WID-SEC-2023-1435,CB-K17/0980,CB-K17/0979,CB-K14/0772,CB-K13/0915,CB-K13/0462",""
+192.168.31.206,vuln-1.lan,9200,tcp,4.9,Medium,80,"VendorFix","Elastic Elasticsearch Information Disclosure Vulnerability (ESA-2021-03)","Elasticsearch is prone to an information disclosure vulnerability.","Installed version: 1.4.2
+Fixed version:     6.8.14
+Installation
+path / port:       /
+
+",1.3.6.1.4.1.25623.1.0.145383,"CVE-2020-7021",6bda9821-003a-41a9-88f2-f7a59ec30bb2,"vulnopen",2024-04-15T16:11:25Z,1fb50690-5e0c-45a6-91a0-285490671225,"This could allow an Elasticsearch administrator to view sensitive details.","Update to version 6.8.14, 7.10.0 or later.","Elasticsearch versions prior to 6.8.14 and 7.0.0 prior to 7.10.0.","Elasticsearch has an information disclosure issue when audit logging and
+  the emit_request_body option is enabled. The Elasticsearch audit log could contain sensitive information
+  such as password hashes or authentication tokens.","Checks if a vulnerable version is present on the target host.
+Details:
+Elastic Elasticsearch Information Disclosure Vulnerability (ESA-2021-03)
+(OID: 1.3.6.1.4.1.25623.1.0.145383)
+Version used: 2021-08-17T12:00:57Z
+","","","",""
+192.168.31.55,vuln-1.lan,8161,tcp,4.8,Medium,80,"Workaround","Cleartext Transmission of Sensitive Information via HTTP","The host / application transmits sensitive information (username, passwords) in
+  cleartext via HTTP.","The following URLs requires Basic Authentication (URL:realm name):
+
+http://vuln-1.lan:8161/admin/:""ActiveMQRealm""
+http://vuln-1.lan:8161/admin/SecureDocumentLibrary/DocumentLibraryManager:""ActiveMQRealm""
+http://vuln-1.lan:8161/admin/SecureDocumentLibrary:""ActiveMQRealm""
+http://vuln-1.lan:8161/admin/airflow/login:""ActiveMQRealm""
+http://vuln-1.lan:8161/admin/airflow:""ActiveMQRealm""
+http://vuln-1.lan:8161/admin/ckeditor/plugins/ajaxplorer/phpunit/src/Util/PHP:""ActiveMQRealm""
+http://vuln-1.lan:8161/admin/ckeditor/plugins/ajaxplorer/phpunit/src/Util:""ActiveMQRealm""
+http://vuln-1.lan:8161/admin/ckeditor/plugins/ajaxplorer/phpunit/src:""ActiveMQRealm""
+http://vuln-1.lan:8161/admin/ckeditor/plugins/ajaxplorer/phpunit:""ActiveMQRealm""
+http://vuln-1.lan:8161/admin/ckeditor/plugins/ajaxplorer:""ActiveMQRealm""
+http://vuln-1.lan:8161/admin/ckeditor/plugins:""ActiveMQRealm""
+http://vuln-1.lan:8161/admin/ckeditor:""ActiveMQRealm""
+http://vuln-1.lan:8161/admin/configurationview:""ActiveMQRealm""
+http://vuln-1.lan:8161/admin/fckeditor:""ActiveMQRealm""
+http://vuln-1.lan:8161/admin/helpfiles:""ActiveMQRealm""
+http://vuln-1.lan:8161/admin/htmleditor:""ActiveMQRealm""
+http://vuln-1.lan:8161/admin/lib/gradient:""ActiveMQRealm""
+http://vuln-1.lan:8161/admin/lib:""ActiveMQRealm""
+http://vuln-1.lan:8161/admin/login:""ActiveMQRealm""
+http://vuln-1.lan:8161/admin/public:""ActiveMQRealm""
+http://vuln-1.lan:8161/admin/vendor/phpunit/phpunit/src/Util/PHP:""ActiveMQRealm""
+http://vuln-1.lan:8161/admin/vendor/phpunit/phpunit/src/Util:""ActiveMQRealm""
+http://vuln-1.lan:8161/admin/vendor/phpunit/phpunit/src:""ActiveMQRealm""
+http://vuln-1.lan:8161/admin/vendor/phpunit/phpunit:""ActiveMQRealm""
+http://vuln-1.lan:8161/admin/vendor/phpunit:""ActiveMQRealm""
+http://vuln-1.lan:8161/admin/vendor:""ActiveMQRealm""
+http://vuln-1.lan:8161/admin:""ActiveMQRealm""
+http://vuln-1.lan:8161/api/1:""ActiveMQRealm""
+http://vuln-1.lan:8161/api/2.1/rest:""ActiveMQRealm""
+http://vuln-1.lan:8161/api/2.1:""ActiveMQRealm""
+http://vuln-1.lan:8161/api/2:""ActiveMQRealm""
+http://vuln-1.lan:8161/api/config/class:""ActiveMQRealm""
+http://vuln-1.lan:8161/api/config:""ActiveMQRealm""
+http://vuln-1.lan:8161/api/explorer:""ActiveMQRealm""
+http://vuln-1.lan:8161/api/hassio/app:""ActiveMQRealm""
+http://vuln-1.lan:8161/api/hassio:""ActiveMQRealm""
+http://vuln-1.lan:8161/api/hassio_ingress:""ActiveMQRealm""
+http://vuln-1.lan:8161/api/json/nfausers:""ActiveMQRealm""
+http://vuln-1.lan:8161/api/json:""ActiveMQRealm""
+http://vuln-1.lan:8161/api/jsonws:""ActiveMQRealm""
+http://vuln-1.lan:8161/api/ldap/config/ldapTreeNodeChildren:""ActiveMQRealm""
+http://vuln-1.lan:8161/api/ldap/config:""ActiveMQRealm""
+http://vuln-1.lan:8161/api/ldap:""ActiveMQRealm""
+http://vuln-1.lan:8161/api/platform:""ActiveMQRealm""
+http://vuln-1.lan:8161/api/repos/dashboards:""ActiveMQRealm""
+http://vuln-1.lan:8161/api/repos:""ActiveMQRealm""
+http://vuln-1.lan:8161/api/system:""ActiveMQRealm""
+http://vuln-1.lan:8161/api/userrolelist:""ActiveMQRealm""
+http://vuln-1.lan:8161/api/v1.0:""ActiveMQRealm""
+http://vuln-1.lan:8161/api/v1/authentication/connection-token:""ActiveMQRealm""
+http://vuln-1.lan:8161/api/v1/authentication:""ActiveMQRealm""
+http://vuln-1.lan:8161/api/v1/folders:""ActiveMQRealm""
+http://vuln-1.lan:8161/api/v1/status:""ActiveMQRealm""
+http://vuln-1.lan:8161/api/v1/terminal/sessions:""ActiveMQRealm""
+http://vuln-1.lan:8161/api/v1/terminal:""ActiveMQRealm""
+http://vuln-1.lan:8161/api/v1/users/connection-token:""ActiveMQRealm""
+http://vuln-1.lan:8161/api/v1/users:""ActiveMQRealm""
+http://vuln-1.lan:8161/api/v1:""ActiveMQRealm""
+http://vuln-1.lan:8161/api/v2.0:""ActiveMQRealm""
+http://vuln-1.lan:8161/api/v2:""ActiveMQRealm""
+http://vuln-1.lan:8161/api/v3.0:""ActiveMQRealm""
+http://vuln-1.lan:8161/api/v3:""ActiveMQRealm""
+http://vuln-1.lan:8161/api/v4.0:""ActiveMQRealm""
+http://vuln-1.lan:8161/api/v4/teams:""ActiveMQRealm""
+http://vuln-1.lan:8161/api/v4/users/me/teams:""ActiveMQRealm""
+http://vuln-1.lan:8161/api/v4/users/me:""ActiveMQRealm""
+http://vuln-1.lan:8161/api/v4/users:""ActiveMQRealm""
+http://vuln-1.lan:8161/api/v4:""ActiveMQRealm""
+http://vuln-1.lan:8161/api/v5.0:""ActiveMQRealm""
+http://vuln-1.lan:8161/api/v5:""ActiveMQRealm""
+http://vuln-1.lan:8161/api/vendor/phpunit/phpunit/src/Util/PHP:""ActiveMQRealm""
+http://vuln-1.lan:8161/api/vendor/phpunit/phpunit/src/Util:""ActiveMQRealm""
+http://vuln-1.lan:8161/api/vendor/phpunit/phpunit/src:""ActiveMQRealm""
+http://vuln-1.lan:8161/api/vendor/phpunit/phpunit:""ActiveMQRealm""
+http://vuln-1.lan:8161/api/vendor/phpunit:""ActiveMQRealm""
+http://vuln-1.lan:8161/api/vendor:""ActiveMQRealm""
+http://vuln-1.lan:8161/api/vppv2:""ActiveMQRealm""
+http://vuln-1.lan:8161/api:""ActiveMQRealm""
+",1.3.6.1.4.1.25623.1.0.108440,"",6bda9821-003a-41a9-88f2-f7a59ec30bb2,"vulnopen",2024-04-15T16:11:25Z,340d596d-41f9-48bc-b22d-ac7532a8e8ab,"An attacker could use this situation to compromise or eavesdrop on the
+  HTTP communication between the client and the server using a man-in-the-middle attack to get access to
+  sensitive data like usernames or passwords.","Enforce the transmission of sensitive data via an encrypted SSL/TLS connection.
+  Additionally make sure the host / application is redirecting all users to the secured SSL/TLS connection before
+  allowing to input sensitive data into the mentioned functions.","Hosts / applications which doesn't enforce the transmission of sensitive data via an
+  encrypted SSL/TLS connection.","","Evaluate previous collected information and check if the host / application is not
+  enforcing the transmission of sensitive data via an encrypted SSL/TLS connection.
+
+  The script is currently checking the following:
+
+  - HTTP Basic Authentication (Basic Auth)
+
+  - HTTP Forms (e.g. Login) with input field of type 'password'
+Details:
+Cleartext Transmission of Sensitive Information via HTTP
+(OID: 1.3.6.1.4.1.25623.1.0.108440)
+Version used: 2023-09-07T05:05:21Z
+","","","",""
+192.168.31.55,vuln-1.lan,3000,tcp,4.8,Medium,80,"VendorFix","Grafana < 8.5.22, 9.2.x < 9.2.15, 9.3.x < 9.3.11, 9.4.x < 9.4.7 XSS Vulnerability (GHSA-qrrg-gw7w-vp76)","Grafana is prone to a cross-site scripting (XSS)
+  vulnerability.","Installed version: 8.2.6
+Fixed version:     8.5.22
+Installation
+path / port:       /
+
+",1.3.6.1.4.1.25623.1.0.127372,"CVE-2023-1410",6bda9821-003a-41a9-88f2-f7a59ec30bb2,"vulnopen",2024-04-15T16:11:25Z,9c8b34b7-dddf-4e07-8c9a-79f42385ab0e,"","Update to version 8.5.22, 9.2.15, 9.3.11, 9.4.7 or later.","Grafana prior to version 8.5.22, 9.2.x prior to 9.2.15,
+  9.3.x prior to 9.3.11 and 9.4.x prior to 9.4.7.","The stored cross-site scripting (XSS) is possible due to
+  improper sanitization of the Function Description value.","Checks if a vulnerable version is present on the target host.
+Details:
+Grafana < 8.5.22, 9.2.x < 9.2.15, 9.3.x < 9.3.11, 9.4.x < 9.4.7 XSS Vulnerab...
+(OID: 1.3.6.1.4.1.25623.1.0.127372)
+Version used: 2023-10-13T05:06:10Z
+","","","DFN-CERT-2023-3124,DFN-CERT-2023-1430,DFN-CERT-2023-0999,DFN-CERT-2023-0901,WID-SEC-2023-1130,WID-SEC-2023-0726",""
+192.168.31.55,vuln-1.lan,3000,tcp,4.3,Medium,80,"VendorFix","Grafana OAuth Identity Token Vulnerability (GHSA-8wjh-59cw-9xh4)","Grafana is prone to a vulnerability in the OAuth identity token.","Installed version: 8.2.6
+Fixed version:     8.3.4
+Installation
+path / port:       /
+
+",1.3.6.1.4.1.25623.1.0.147463,"CVE-2022-21673",6bda9821-003a-41a9-88f2-f7a59ec30bb2,"vulnopen",2024-04-15T16:11:25Z,4666aefe-56b7-4a9b-b8d5-74d8a44647d6,"","Update to version 7.5.13, 8.3.4 or later.","Grafana version 7.2 through 7.5.12 and 8.x through 8.3.3.","When a data source has the Forward OAuth Identity feature
+  enabled, sending a query to that datasource with an API token (and no other user credentials)
+  will forward the OAuth Identity of the most recently logged-in user.
+
+  This can allow API token holders to retrieve data for which they may not have intended access.
+
+  All of the following must be true:
+
+  - The Grafana instance has data sources that support the Forward OAuth Identity feature. Graphite
+  users, for example.
+
+  - The Grafana instance has a data source with the Forward OAuth Identity feature toggled on.
+
+  - The Grafana instance has OAuth enabled.
+
+  - The Grafana instance has usable API keys.","Checks if a vulnerable version is present on the target host.
+Details:
+Grafana OAuth Identity Token Vulnerability (GHSA-8wjh-59cw-9xh4)
+(OID: 1.3.6.1.4.1.25623.1.0.147463)
+Version used: 2022-01-27T12:34:58Z
+","","","DFN-CERT-2022-2496,DFN-CERT-2022-2350,DFN-CERT-2022-1790,DFN-CERT-2022-1386,DFN-CERT-2022-0922,DFN-CERT-2022-0794,DFN-CERT-2022-0569,WID-SEC-2022-0406,CB-K22/0063",""
+192.168.31.55,vuln-1.lan,3000,tcp,4.3,Medium,80,"VendorFix","Grafana Privilege Escalation Vulnerability (GHSA-gj7m-853r-289r)","Grafana is prone to a privilege escalation vulnerability.","Installed version: 8.2.6
+Fixed version:     8.5.14
+Installation
+path / port:       /
+
+",1.3.6.1.4.1.25623.1.0.124197,"CVE-2022-39229",6bda9821-003a-41a9-88f2-f7a59ec30bb2,"vulnopen",2024-04-15T16:11:25Z,4171ed93-ba5d-4e4a-b69d-530a1ee88992,"Abusing this vulnerability allows a user to block another user's
+  login attempt by registering someone else's email address as a username.","Update to version 8.5.14, 9.1.8 or later.","Grafana version 8.x through 8.5.13, 9.x through 9.1.7.","","Checks if a vulnerable version is present on the target host.
+Details:
+Grafana Privilege Escalation Vulnerability (GHSA-gj7m-853r-289r)
+(OID: 1.3.6.1.4.1.25623.1.0.124197)
+Version used: 2023-10-18T05:05:17Z
+","","","DFN-CERT-2023-1395,DFN-CERT-2023-1120,DFN-CERT-2023-1045,DFN-CERT-2023-0322,WID-SEC-2022-1702",""
+192.168.31.55,vuln-1.lan,8500,tcp,4.3,Medium,99,"VendorFix","Adobe ColdFusion HTTP Response Splitting Vulnerability (APSB12-15)","Adobe ColdFusion is prone to a response splitting vulnerability.","Vulnerable URL: http://vuln-1.lan:8500/CFIDE/adminapi/base.cfc/%0d%0aX-VT_Header:1713198217
+",1.3.6.1.4.1.25623.1.0.802660,"CVE-2012-2041",6bda9821-003a-41a9-88f2-f7a59ec30bb2,"vulnopen",2024-04-15T16:11:25Z,36c7958f-4487-4375-b946-f23d4252ab29,"Successful exploitation will allow attackers to influence or misrepresent how
+  web content is served, cached, or interpreted. This could aid in various
+  attacks that try to entice client users into a false sense of trust.","Apply the patch from the referenced advisory.","Adobe ColdFusion versions 8.0 through 9.0.1.","This flaw exists because the application does not validate an unspecified
+  HTTP header before returning it to the user. This can be exploited to insert
+  arbitrary HTTP headers, which will be included in a response sent to the user.","
+Details:
+Adobe ColdFusion HTTP Response Splitting Vulnerability (APSB12-15)
+(OID: 1.3.6.1.4.1.25623.1.0.802660)
+Version used: 2023-07-25T05:05:58Z
+","","","DFN-CERT-2012-1121",""
+192.168.31.55,vuln-1.lan,2379,tcp,4.3,Medium,80,"VendorFix","etcd < 3.4.26, 3.5.x < 3.5.9 Information Disclosure Vulnerability (GHSA-3p4g-rcw5-8298)","etcd is prone to an information disclosure vulnerability.","Installed version: 3.4.15
+Fixed version:     3.4.26
+
+",1.3.6.1.4.1.25623.1.0.149673,"CVE-2023-32082",6bda9821-003a-41a9-88f2-f7a59ec30bb2,"vulnopen",2024-04-15T16:11:25Z,acf332e9-b966-400a-9182-bbd481f23af3,"","Update to version 3.4.26, 3.5.9 or later.","etcd prior to version 3.4.26 and version 3.5.x through 3.5.8.","LeaseTimeToLive API allows access to key names (not value)
+  associated to a lease when Keys parameter is true, even a user doesn't have read permission to
+  the keys. The impact is limited to a cluster which enables auth (RBAC).","Checks if a vulnerable version is present on the target host.
+Details:
+etcd < 3.4.26, 3.5.x < 3.5.9 Information Disclosure Vulnerability (GHSA-3p4g...
+(OID: 1.3.6.1.4.1.25623.1.0.149673)
+Version used: 2023-10-12T05:05:32Z
+","","","DFN-CERT-2023-1298,WID-SEC-2023-1373",""
+192.168.31.55,vuln-1.lan,3000,tcp,4.3,Medium,80,"VendorFix","Grafana 8.0.0-beta3 - 8.3.1 Directory Traversal Vulnerability","Grafana is prone to a directory traversal vulnerability for
+  '.csv' files.","Installed version: 8.2.6
+Fixed version:     8.3.2
+Installation
+path / port:       /
+
+",1.3.6.1.4.1.25623.1.0.147338,"CVE-2021-43815",6bda9821-003a-41a9-88f2-f7a59ec30bb2,"vulnopen",2024-04-15T16:11:25Z,c3f13b30-3b8d-4949-9070-87db020d0db7,"","Update to version 8.3.2 or later.","Grafana version 8.0.0-beta3 through 8.3.1.","Grafana has a directory traversal for arbitrary .csv files. It
+  only affects instances that have the developer testing tool called TestData DB data source
+  enabled and configured. The vulnerability is limited in scope, and only allows access to files
+  with the extension .csv to authenticated users only.","Checks if a vulnerable version is present on the target host.
+Details:
+Grafana 8.0.0-beta3 - 8.3.1 Directory Traversal Vulnerability
+(OID: 1.3.6.1.4.1.25623.1.0.147338)
+Version used: 2021-12-16T10:21:14Z
+","","","DFN-CERT-2024-0423,DFN-CERT-2022-2825,DFN-CERT-2022-2350,DFN-CERT-2022-1386,DFN-CERT-2022-0922,WID-SEC-2022-0405,CB-K21/1270",""
+192.168.31.55,vuln-1.lan,3000,tcp,4.3,Medium,80,"VendorFix","Grafana IDOR Vulnerability (GHSA-63g3-9jq3-mccv)","Grafana is prone to an insecure direct object reference (IDOR)
+  vulnerability on Grafana Teams APIs.","Installed version: 8.2.6
+Fixed version:     8.3.5
+Installation
+path / port:       /
+
+",1.3.6.1.4.1.25623.1.0.147616,"CVE-2022-21713",6bda9821-003a-41a9-88f2-f7a59ec30bb2,"vulnopen",2024-04-15T16:11:25Z,69c27702-8184-4ec4-a89d-b89ef0812c0c,"This vulnerability only impacts the following API endpoints:
+
+  - /teams/:teamId - an authenticated attacker can view unintended data by querying for the
+  specific team ID.
+
+  - /teams/:search - an authenticated attacker can search for teams and see the total number of
+  available teams, including for those teams that the user does not have access to.
+
+  - /teams/:teamId/members - when editors_can_admin flag is enabled, an authenticated attacker can
+  see unintended data by querying for the specific team ID.","Update to version 7.5.15, 8.3.5 or later.","Grafana version 5.0.0-beta1 through 7.5.14 and 8.x through
+  8.3.4.","","Checks if a vulnerable version is present on the target host.
+Details:
+Grafana IDOR Vulnerability (GHSA-63g3-9jq3-mccv)
+(OID: 1.3.6.1.4.1.25623.1.0.147616)
+Version used: 2022-02-16T03:03:58Z
+","","","DFN-CERT-2022-2496,DFN-CERT-2022-2397,DFN-CERT-2022-2350,DFN-CERT-2022-1386,DFN-CERT-2022-0922,DFN-CERT-2022-0794,WID-SEC-2022-0407,CB-K22/0159",""
+192.168.31.55,vuln-1.lan,3000,tcp,4.3,Medium,80,"VendorFix","Grafana 5.0.0 - 8.3.1 Directory Traversal Vulnerability","Grafana is prone to a directory traversal vulnerability for
+  '.md' files.","Installed version: 8.2.6
+Fixed version:     8.3.2
+Installation
+path / port:       /
+
+",1.3.6.1.4.1.25623.1.0.147337,"CVE-2021-43813,CVE-2021-43815",6bda9821-003a-41a9-88f2-f7a59ec30bb2,"vulnopen",2024-04-15T16:11:25Z,782bea14-6cfd-467a-844f-df7947a5a454,"","Update to version 7.5.12, 8.3.2 or later.","Grafana version 5.0.0 through 8.3.1.","Grafana contains a directory traversal vulnerability for fully
+  lowercase or fully uppercase .md files. The vulnerability is limited in scope, and only allows
+  access to files with the extension .md to authenticated users only.","Checks if a vulnerable version is present on the target host.
+Details:
+Grafana 5.0.0 - 8.3.1 Directory Traversal Vulnerability
+(OID: 1.3.6.1.4.1.25623.1.0.147337)
+Version used: 2021-12-16T10:21:14Z
+","","","DFN-CERT-2024-0423,DFN-CERT-2022-2825,DFN-CERT-2022-2350,DFN-CERT-2022-1790,DFN-CERT-2022-1386,DFN-CERT-2022-1142,DFN-CERT-2022-1068,DFN-CERT-2022-0922,DFN-CERT-2022-0569,DFN-CERT-2022-0152,DFN-CERT-2022-0144,WID-SEC-2022-0405,CB-K21/1270",""
+192.168.31.55,vuln-1.lan,8500,tcp,4.3,Medium,80,"VendorFix","Adobe ColdFusion Multiple Vulnerabilities (APSB15-29)","Adobe ColdFusion is prone to multiple vulnerabilities.","Installed version: 11.0.03.292866
+Fixed version:     11.0.07.296330
+Installation
+path / port:       /
+
+",1.3.6.1.4.1.25623.1.0.807014,"CVE-2015-8052,CVE-2015-8053,CVE-2015-5255",6bda9821-003a-41a9-88f2-f7a59ec30bb2,"vulnopen",2024-04-15T16:11:25Z,f881871c-75d5-48f9-a5bb-0c0e39f50d02,"Successful exploitation will allow remote
+  attackers to inject arbitrary web script or HTML via unspecified vectors,
+  to send HTTP traffic to intranet servers.","Upgrade to version 10 Update 18 or
+  11 Update 7 or later.","ColdFusion 10 before Update 18 and
+  11 before Update 7.","Multiple flaws are due to:
+
+  - An insufficient validation of user supplied input via unspecified vectors.
+
+  - The Server-Side Request Forgery (SSRF) issue in Adobe BlazeDS.","Checks if a vulnerable version is present on the target host.
+Details:
+Adobe ColdFusion Multiple Vulnerabilities (APSB15-29)
+(OID: 1.3.6.1.4.1.25623.1.0.807014)
+Version used: 2023-07-21T05:05:22Z
+","","","DFN-CERT-2015-1782,DFN-CERT-2015-1290,CB-K15/1683,CB-K15/1221",""
+192.168.31.206,vuln-1.lan,3306,tcp,4.3,Medium,98,"Mitigation","SSL/TLS: Deprecated TLSv1.0 and TLSv1.1 Protocol Detection","It was possible to detect the usage of the deprecated TLSv1.0
+  and/or TLSv1.1 protocol on this system.","In addition to TLSv1.2+ the service is also providing the deprecated TLSv1.0 and TLSv1.1 protocols and supports one or more ciphers. Those supported ciphers can be found in the 'SSL/TLS: Report Supported Cipher Suites' (OID: 1.3.6.1.4.1.25623.1.0.802067) VT.
+",1.3.6.1.4.1.25623.1.0.117274,"CVE-2011-3389,CVE-2015-0204",6bda9821-003a-41a9-88f2-f7a59ec30bb2,"vulnopen",2024-04-15T16:11:25Z,af6b3c32-521f-43c0-809d-c8298e9e71c6,"An attacker might be able to use the known cryptographic flaws
+  to eavesdrop the connection between clients and the service to get access to sensitive data
+  transferred within the secured connection.
+
+  Furthermore newly uncovered vulnerabilities in this protocols won't receive security updates
+  anymore.","It is recommended to disable the deprecated TLSv1.0 and/or
+  TLSv1.1 protocols in favor of the TLSv1.2+ protocols. Please see the references for more
+  information.","All services providing an encrypted communication using the
+  TLSv1.0 and/or TLSv1.1 protocols.","The TLSv1.0 and TLSv1.1 protocols contain known cryptographic
+  flaws like:
+
+  - CVE-2011-3389: Browser Exploit Against SSL/TLS (BEAST)
+
+  - CVE-2015-0204: Factoring Attack on RSA-EXPORT Keys Padding Oracle On Downgraded Legacy
+  Encryption (FREAK)","Check the used TLS protocols of the services provided by this
+  system.
+Details:
+SSL/TLS: Deprecated TLSv1.0 and TLSv1.1 Protocol Detection
+(OID: 1.3.6.1.4.1.25623.1.0.117274)
+Version used: 2023-10-20T16:09:12Z
+","","","DFN-CERT-2020-0177,DFN-CERT-2020-0111,DFN-CERT-2019-0068,DFN-CERT-2018-1441,DFN-CERT-2018-1408,DFN-CERT-2016-1372,DFN-CERT-2016-1164,DFN-CERT-2016-0388,DFN-CERT-2015-1853,DFN-CERT-2015-1332,DFN-CERT-2015-0884,DFN-CERT-2015-0800,DFN-CERT-2015-0758,DFN-CERT-2015-0567,DFN-CERT-2015-0544,DFN-CERT-2015-0530,DFN-CERT-2015-0396,DFN-CERT-2015-0375,DFN-CERT-2015-0374,DFN-CERT-2015-0305,DFN-CERT-2015-0199,DFN-CERT-2015-0079,DFN-CERT-2015-0021,DFN-CERT-2014-1414,DFN-CERT-2013-1847,DFN-CERT-2013-1792,DFN-CERT-2012-1979,DFN-CERT-2012-1829,DFN-CERT-2012-1530,DFN-CERT-2012-1380,DFN-CERT-2012-1377,DFN-CERT-2012-1292,DFN-CERT-2012-1214,DFN-CERT-2012-1213,DFN-CERT-2012-1180,DFN-CERT-2012-1156,DFN-CERT-2012-1155,DFN-CERT-2012-1039,DFN-CERT-2012-0956,DFN-CERT-2012-0908,DFN-CERT-2012-0868,DFN-CERT-2012-0867,DFN-CERT-2012-0848,DFN-CERT-2012-0838,DFN-CERT-2012-0776,DFN-CERT-2012-0722,DFN-CERT-2012-0638,DFN-CERT-2012-0627,DFN-CERT-2012-0451,DFN-CERT-2012-0418,DFN-CERT-2012-0354,DFN-CERT-2012-0234,DFN-CERT-2012-0221,DFN-CERT-2012-0177,DFN-CERT-2012-0170,DFN-CERT-2012-0146,DFN-CERT-2012-0142,DFN-CERT-2012-0126,DFN-CERT-2012-0123,DFN-CERT-2012-0095,DFN-CERT-2012-0051,DFN-CERT-2012-0047,DFN-CERT-2012-0021,DFN-CERT-2011-1953,DFN-CERT-2011-1946,DFN-CERT-2011-1844,DFN-CERT-2011-1826,DFN-CERT-2011-1774,DFN-CERT-2011-1743,DFN-CERT-2011-1738,DFN-CERT-2011-1706,DFN-CERT-2011-1628,DFN-CERT-2011-1627,DFN-CERT-2011-1619,DFN-CERT-2011-1482,WID-SEC-2023-1435,CB-K18/0799,CB-K16/1289,CB-K16/1096,CB-K15/1751,CB-K15/1266,CB-K15/0850,CB-K15/0764,CB-K15/0720,CB-K15/0548,CB-K15/0526,CB-K15/0509,CB-K15/0493,CB-K15/0384,CB-K15/0365,CB-K15/0364,CB-K15/0302,CB-K15/0192,CB-K15/0079,CB-K15/0016,CB-K14/1342,CB-K14/0231,CB-K13/0845,CB-K13/0796,CB-K13/0790",""
+192.168.31.55,vuln-1.lan,3000,tcp,3.5,Low,80,"VendorFix","Grafana 8.x < 9.2.10, 9.3.0 < 9.3.4 Spoofing Vulnerability (GHSA-4724-7jwc-3fpw)","Grafana is prone to a spoofing vulnerability in the snapshot
+  functionality.","Installed version: 8.2.6
+Fixed version:     9.2.10
+Installation
+path / port:       /
+
+",1.3.6.1.4.1.25623.1.0.149216,"CVE-2022-39324",6bda9821-003a-41a9-88f2-f7a59ec30bb2,"vulnopen",2024-04-15T16:11:25Z,73151689-4c55-4261-8aa9-df72facfa8ea,"","Update to version 9.2.10, 9.3.4 or later.","Grafana version 8.x and 9.x.","The value of the originalUrl parameter is automatically
+  generated. The purpose of the presented originalUrl parameter is to provide a user who views the
+  snapshot with the possibility to click on the Local Snapshot button in the Grafana web UI and be
+  presented with the dashboard that the snapshot captured. The value of the originalUrl parameter
+  can be arbitrarily chosen by a malicious user that creates the snapshot. (Note: This can be done
+  by editing the query thanks to a web proxy like Burp.)","Checks if a vulnerable version is present on the target host.
+Details:
+Grafana 8.x < 9.2.10, 9.3.0 < 9.3.4 Spoofing Vulnerability (GHSA-4724-7jwc-3...
+(OID: 1.3.6.1.4.1.25623.1.0.149216)
+Version used: 2023-10-13T05:06:10Z
+","","","DFN-CERT-2023-2756,DFN-CERT-2023-1395,DFN-CERT-2023-0622,WID-SEC-2023-0202",""
+192.168.31.206,vuln-1.lan,9200,tcp,3.1,Low,80,"VendorFix","Elastic Elasticsearch Information Disclosure Vulnerability (ESA-2020-13)","Elasticsearch is prone to an information disclosure vulnerability.","Installed version: 1.4.2
+Fixed version:     6.8.13
+Installation
+path / port:       /
+
+",1.3.6.1.4.1.25623.1.0.117181,"CVE-2020-7020",6bda9821-003a-41a9-88f2-f7a59ec30bb2,"vulnopen",2024-04-15T16:11:25Z,9bbbb990-2fab-428e-94e6-274e3fba57cc,"This could result in the search disclosing the existence of documents
+  the attacker should not be able to view. This could result in an attacker gaining additional insight
+  into potentially sensitive indices.","Update to version 6.8.13, 7.9.2 or later.","Elasticsearch versions before 6.8.13 and 7.x before 7.9.2.","A document disclosure flaw was found in Elasticsearch when Document or
+  Field Level Security is used. Search queries do not properly preserve security permissions when executing
+  certain complex queries.","Checks if a vulnerable version is present on the target host.
+Details:
+Elastic Elasticsearch Information Disclosure Vulnerability (ESA-2020-13)
+(OID: 1.3.6.1.4.1.25623.1.0.117181)
+Version used: 2021-08-17T12:00:57Z
+","","","DFN-CERT-2022-1530,WID-SEC-2022-0607",""
+192.168.31.206,vuln-1.lan,22,tcp,2.6,Low,80,"Mitigation","Weak MAC Algorithm(s) Supported (SSH)","The remote SSH server is configured to allow / support weak MAC
+  algorithm(s).","The remote SSH server supports the following weak client-to-server MAC algorithm(s):
+
+umac-64-etm@openssh.com
+umac-64@openssh.com
+
+
+The remote SSH server supports the following weak server-to-client MAC algorithm(s):
+
+umac-64-etm@openssh.com
+umac-64@openssh.com
+",1.3.6.1.4.1.25623.1.0.105610,"",6bda9821-003a-41a9-88f2-f7a59ec30bb2,"vulnopen",2024-04-15T16:11:25Z,331f473f-af81-42e6-abc4-84356ff3122b,"","Disable the reported weak MAC algorithm(s).","","","Checks the supported MAC algorithms (client-to-server and
+  server-to-client) of the remote SSH server.
+
+  Currently weak MAC algorithms are defined as the following:
+
+  - MD5 based algorithms
+
+  - 96-bit based algorithms
+
+  - 64-bit based algorithms
+
+  - 'none' algorithm
+Details:
+Weak MAC Algorithm(s) Supported (SSH)
+(OID: 1.3.6.1.4.1.25623.1.0.105610)
+Version used: 2023-10-12T05:05:32Z
+","","","",""
+192.168.31.55,vuln-1.lan,22,tcp,2.6,Low,80,"Mitigation","Weak MAC Algorithm(s) Supported (SSH)","The remote SSH server is configured to allow / support weak MAC
+  algorithm(s).","The remote SSH server supports the following weak client-to-server MAC algorithm(s):
+
+umac-64-etm@openssh.com
+umac-64@openssh.com
+
+
+The remote SSH server supports the following weak server-to-client MAC algorithm(s):
+
+umac-64-etm@openssh.com
+umac-64@openssh.com
+",1.3.6.1.4.1.25623.1.0.105610,"",6bda9821-003a-41a9-88f2-f7a59ec30bb2,"vulnopen",2024-04-15T16:11:25Z,f1af6094-a11e-4e1b-9c91-5987d2d0fd72,"","Disable the reported weak MAC algorithm(s).","","","Checks the supported MAC algorithms (client-to-server and
+  server-to-client) of the remote SSH server.
+
+  Currently weak MAC algorithms are defined as the following:
+
+  - MD5 based algorithms
+
+  - 96-bit based algorithms
+
+  - 64-bit based algorithms
+
+  - 'none' algorithm
+Details:
+Weak MAC Algorithm(s) Supported (SSH)
+(OID: 1.3.6.1.4.1.25623.1.0.105610)
+Version used: 2023-10-12T05:05:32Z
+","","","",""
+192.168.31.206,vuln-1.lan,2222,tcp,2.6,Low,80,"Mitigation","Weak MAC Algorithm(s) Supported (SSH)","The remote SSH server is configured to allow / support weak MAC
+  algorithm(s).","The remote SSH server supports the following weak client-to-server MAC algorithm(s):
+
+umac-64-etm@openssh.com
+umac-64@openssh.com
+
+
+The remote SSH server supports the following weak server-to-client MAC algorithm(s):
+
+umac-64-etm@openssh.com
+umac-64@openssh.com
+",1.3.6.1.4.1.25623.1.0.105610,"",6bda9821-003a-41a9-88f2-f7a59ec30bb2,"vulnopen",2024-04-15T16:11:25Z,ce9eca8e-e709-4b94-b9bd-bfda7d3980d3,"","Disable the reported weak MAC algorithm(s).","","","Checks the supported MAC algorithms (client-to-server and
+  server-to-client) of the remote SSH server.
+
+  Currently weak MAC algorithms are defined as the following:
+
+  - MD5 based algorithms
+
+  - 96-bit based algorithms
+
+  - 64-bit based algorithms
+
+  - 'none' algorithm
+Details:
+Weak MAC Algorithm(s) Supported (SSH)
+(OID: 1.3.6.1.4.1.25623.1.0.105610)
+Version used: 2023-10-12T05:05:32Z
+","","","",""
+192.168.31.206,vuln-1.lan,,,2.6,Low,80,"Mitigation","TCP Timestamps Information Disclosure","The remote host implements TCP timestamps and therefore allows
+  to compute the uptime.","It was detected that the host implements RFC1323/RFC7323.
+
+The following timestamps were retrieved with a delay of 1 seconds in-between:
+Packet 1: 884063924
+Packet 2: 884065032
+",1.3.6.1.4.1.25623.1.0.80091,"",6bda9821-003a-41a9-88f2-f7a59ec30bb2,"vulnopen",2024-04-15T16:11:25Z,051be6a3-7739-41c5-b9e6-6f1afc2c1428,"A side effect of this feature is that the uptime of the remote
+  host can sometimes be computed.","To disable TCP timestamps on linux add the line
+  'net.ipv4.tcp_timestamps = 0' to /etc/sysctl.conf. Execute 'sysctl -p' to apply the settings at
+  runtime.
+
+  To disable TCP timestamps on Windows execute 'netsh int tcp set global timestamps=disabled'
+
+  Starting with Windows Server 2008 and Vista, the timestamp can not be completely disabled.
+
+  The default behavior of the TCP/IP stack on this Systems is to not use the Timestamp options when
+  initiating TCP connections, but use them if the TCP peer that is initiating communication includes
+  them in their synchronize (SYN) segment.
+
+  See the references for more information.","TCP implementations that implement RFC1323/RFC7323.","The remote host implements TCP timestamps, as defined by
+  RFC1323/RFC7323.","Special IP packets are forged and sent with a little delay in
+  between to the target IP. The responses are searched for a timestamps. If found, the timestamps
+  are reported.
+Details:
+TCP Timestamps Information Disclosure
+(OID: 1.3.6.1.4.1.25623.1.0.80091)
+Version used: 2023-12-15T16:10:08Z
+","","","",""
+192.168.31.55,vuln-1.lan,,,2.6,Low,80,"Mitigation","TCP Timestamps Information Disclosure","The remote host implements TCP timestamps and therefore allows
+  to compute the uptime.","It was detected that the host implements RFC1323/RFC7323.
+
+The following timestamps were retrieved with a delay of 1 seconds in-between:
+Packet 1: 3406200674
+Packet 2: 3406201785
+",1.3.6.1.4.1.25623.1.0.80091,"",6bda9821-003a-41a9-88f2-f7a59ec30bb2,"vulnopen",2024-04-15T16:11:25Z,b2817e0a-7c9e-4f42-bebb-0e558271afb7,"A side effect of this feature is that the uptime of the remote
+  host can sometimes be computed.","To disable TCP timestamps on linux add the line
+  'net.ipv4.tcp_timestamps = 0' to /etc/sysctl.conf. Execute 'sysctl -p' to apply the settings at
+  runtime.
+
+  To disable TCP timestamps on Windows execute 'netsh int tcp set global timestamps=disabled'
+
+  Starting with Windows Server 2008 and Vista, the timestamp can not be completely disabled.
+
+  The default behavior of the TCP/IP stack on this Systems is to not use the Timestamp options when
+  initiating TCP connections, but use them if the TCP peer that is initiating communication includes
+  them in their synchronize (SYN) segment.
+
+  See the references for more information.","TCP implementations that implement RFC1323/RFC7323.","The remote host implements TCP timestamps, as defined by
+  RFC1323/RFC7323.","Special IP packets are forged and sent with a little delay in
+  between to the target IP. The responses are searched for a timestamps. If found, the timestamps
+  are reported.
+Details:
+TCP Timestamps Information Disclosure
+(OID: 1.3.6.1.4.1.25623.1.0.80091)
+Version used: 2023-12-15T16:10:08Z
+","","","",""
+192.168.31.55,vuln-1.lan,,,2.1,Low,80,"Mitigation","ICMP Timestamp Reply Information Disclosure","The remote host responded to an ICMP timestamp request.","The following response / ICMP packet has been received:
+- ICMP Type: 14
+- ICMP Code: 0
+",1.3.6.1.4.1.25623.1.0.103190,"CVE-1999-0524",6bda9821-003a-41a9-88f2-f7a59ec30bb2,"vulnopen",2024-04-15T16:11:25Z,d29eaffb-0cc1-49fd-a7e7-c56189664489,"This information could theoretically be used to exploit weak
+  time-based random number generators in other services.","Various mitigations are possible:
+
+  - Disable the support for ICMP timestamp on the remote host completely
+
+  - Protect the remote host by a firewall, and block ICMP packets passing through the firewall in
+  either direction (either completely or only for untrusted networks)","","The Timestamp Reply is an ICMP message which replies to a
+  Timestamp message. It consists of the originating timestamp sent by the sender of the Timestamp as
+  well as a receive timestamp and a transmit timestamp.","Sends an ICMP Timestamp (Type 13) request and checks if a
+  Timestamp Reply (Type 14) is received.
+Details:
+ICMP Timestamp Reply Information Disclosure
+(OID: 1.3.6.1.4.1.25623.1.0.103190)
+Version used: 2023-05-11T09:09:33Z
+","","","DFN-CERT-2014-0658,CB-K15/1514,CB-K14/0632",""
+192.168.31.206,vuln-1.lan,,,2.1,Low,80,"Mitigation","ICMP Timestamp Reply Information Disclosure","The remote host responded to an ICMP timestamp request.","The following response / ICMP packet has been received:
+- ICMP Type: 14
+- ICMP Code: 0
+",1.3.6.1.4.1.25623.1.0.103190,"CVE-1999-0524",6bda9821-003a-41a9-88f2-f7a59ec30bb2,"vulnopen",2024-04-15T16:11:25Z,6377737e-630a-43e3-be32-bf35e3c6e7e9,"This information could theoretically be used to exploit weak
+  time-based random number generators in other services.","Various mitigations are possible:
+
+  - Disable the support for ICMP timestamp on the remote host completely
+
+  - Protect the remote host by a firewall, and block ICMP packets passing through the firewall in
+  either direction (either completely or only for untrusted networks)","","The Timestamp Reply is an ICMP message which replies to a
+  Timestamp message. It consists of the originating timestamp sent by the sender of the Timestamp as
+  well as a receive timestamp and a transmit timestamp.","Sends an ICMP Timestamp (Type 13) request and checks if a
+  Timestamp Reply (Type 14) is received.
+Details:
+ICMP Timestamp Reply Information Disclosure
+(OID: 1.3.6.1.4.1.25623.1.0.103190)
+Version used: 2023-05-11T09:09:33Z
+","","","DFN-CERT-2014-0658,CB-K15/1514,CB-K14/0632",""
